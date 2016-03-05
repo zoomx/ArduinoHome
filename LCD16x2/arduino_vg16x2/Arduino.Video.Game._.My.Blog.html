@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arduino Video Game | My Blog</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://nakulrao.wordpress.com/xmlrpc.php">
+
+<meta name="google-site-verification" content="aM3UdXpgGxDphD-3A9bdUEmml7MflVHICVOGatmxfho">
+<link rel="alternate" type="application/rss+xml" title="My Blog » Feed" href="https://nakulrao.wordpress.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="My Blog » Comments Feed" href="https://nakulrao.wordpress.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="My Blog » Arduino Video Game Comments Feed" href="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel="stylesheet" id="all-css-0" href="./Arduino Video Game _ My Blog_files/saved_resource" type="text/css" media="all">
+<style id="edin-style-inline-css" type="text/css">
+.hero.with-featured-image { background-image: url(https://nakulrao.files.wordpress.com/2013/07/20130722_192233.jpg?w=923); }
+</style>
+<link rel="stylesheet" id="print-css-1" href="./Arduino Video Game _ My Blog_files/global-print.css" type="text/css" media="print">
+<link rel="stylesheet" id="goran-noto-sans-css" href="./Arduino Video Game _ My Blog_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="goran-noto-serif-css" href="./Arduino Video Game _ My Blog_files/css(1)" type="text/css" media="all">
+<link rel="stylesheet" id="goran-droid-sans-mono-css" href="./Arduino Video Game _ My Blog_files/css(2)" type="text/css" media="all">
+<link rel="stylesheet" id="all-css-8" href="./Arduino Video Game _ My Blog_files/saved_resource(1)" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var LoggedOutFollow = {"invalid_email":"Your subscription did not succeed, please try again with a valid email address."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Arduino Video Game _ My Blog_files/saved_resource(2)"></script>
+<link rel="stylesheet" id="all-css-0" href="./Arduino Video Game _ My Blog_files/style.css" type="text/css" media="all">
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://nakulrao.wordpress.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Cryptanalysis" href="https://nakulrao.wordpress.com/2013/07/12/cryptanalysis/">
+<link rel="next" title="Virtual Machine for Arduino" href="https://nakulrao.wordpress.com/2013/08/03/virtual-machine-for-arduino/">
+<meta name="generator" content="WordPress.com">
+<link rel="canonical" href="./Arduino Video Game _ My Blog_files/Arduino Video Game _ My Blog.html">
+<link rel="shortlink" href="http://wp.me/p3JmVL-H">
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&url=https%3A%2F%2Fnakulrao.wordpress.com%2F2013%2F07%2F23%2Farduino-video-game%2F&for=wpcom-auto-discovery"><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&url=https%3A%2F%2Fnakulrao.wordpress.com%2F2013%2F07%2F23%2Farduino-video-game%2F&for=wpcom-auto-discovery">
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Arduino Video Game">
+<meta property="og:url" content="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/">
+<meta property="og:description" content="I have always wanted to build a video game and finally, I have done it in my own little way. I knew I wanted to build a space ship kind of shooter game. Two player ofcourse. Another thing I knew wa...">
+<meta property="article:published_time" content="2013-07-23T01:55:41+00:00">
+<meta property="article:modified_time" content="2013-07-23T01:55:41+00:00">
+<meta property="og:site_name" content="My Blog">
+<meta property="og:image" content="https://nakulrao.files.wordpress.com/2013/07/20130722_192233.jpg?w=900">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@wordpressdotcom">
+<meta name="twitter:image:src" content="https://nakulrao.files.wordpress.com/2013/07/20130722_192233.jpg?w=640">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="fb:app_id" content="249643311490">
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom">
+<link rel="shortcut icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="apple-touch-icon-precomposed" href="https://s0.wp.com/i/webclip.png">
+<link rel="openid.server" href="https://nakulrao.wordpress.com/?openidserver=1">
+<link rel="openid.delegate" href="https://nakulrao.wordpress.com/">
+<link rel="search" type="application/opensearchdescription+xml" href="https://nakulrao.wordpress.com/osd.xml" title="My Blog">
+<link rel="search" type="application/opensearchdescription+xml" href="https://wordpress.com/opensearch.xml" title="WordPress.com">
+<meta name="application-name" content="My Blog"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content="My Experiments with Electronics"><meta name="msapplication-task" content="name=Subscribe;action-uri=https://nakulrao.wordpress.com/feed/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="title" content="Arduino Video Game | My Blog on WordPress.com">
+<meta name="description" content="I have always wanted to build a video game and finally, I have done it in my own little way. I knew I wanted to build a space ship kind of shooter game. Two player ofcourse. Another thing I knew was that I wanted to use interrupts for all the button press – forward, backward,…">
+
+<script type="text/javascript" src="https://partner.googleadservices.com/gampad/google_service.js">
+</script>
+<script type="text/javascript">
+if ( typeof GS_googleAddAdSenseService == 'function' ) { GS_googleAddAdSenseService("ca-pub-3443918307802676"); }
+if ( typeof GS_googleEnableAllServices == 'function' ) { GS_googleEnableAllServices() };
+</script>
+<script type="text/javascript" src="https://c.amazon-adsystem.com/aax2/amzn_ads.js"></script>
+<script type="text/javascript">
+try { amznads.getAds("3033","300x250"); } catch(e) { /* ignore */ }
+</script>
+<script type="text/javascript">
+var amznKeys = amznads.getKeys();
+if (typeof amznKeys != "undefined" && amznKeys != "") { for (var i =0; i < amznKeys.length; i++) { var key = amznKeys[i]; GA_googleAddAttr("amzn", key);} }
+document.close();
+</script>
+<script type="text/javascript">
+if ( typeof GA_googleAddSlot == 'function' ) { GA_googleAddSlot("ca-pub-3443918307802676", "wpcom_below_post"); }
+</script>
+<script type="text/javascript">
+if ( typeof GA_googleFetchAds == 'function' ) { GA_googleFetchAds(); }
+</script>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+<script type="text/javascript">
+	window.google_analytics_uacct = "UA-52447-2";
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'wordpress.com']);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script><script type="text/javascript" async="" src="./Arduino Video Game _ My Blog_files/ga.js"></script>
+<script type="text/javascript" async="" src="./Arduino Video Game _ My Blog_files/saved_resource(3)"></script><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="./Arduino Video Game _ My Blog_files/hovercard.css"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="./Arduino Video Game _ My Blog_files/services.css"><script type="text/javascript" async="" src="./Arduino Video Game _ My Blog_files/saved_resource(4)"></script></head>
+
+<body class="single single-post postid-43 single-format-quote mp6 customizer-styles-applied has-custom-background navigation-default no-header-navigation sidebar-right highlander-enabled highlander-light small-screen medium-screen large-screen">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/#content">Skip to content</a>
+
+	<header id="masthead" class="site-header" role="banner" style="display: block;">
+		
+		<div class="site-branding">
+						<h1 class="site-title"><a href="https://nakulrao.wordpress.com/" rel="home">My Blog</a></h1>
+			<h2 class="site-description">My Experiments with Electronics</h2>
+		</div><!-- .site-branding -->
+
+			</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+
+	<div class="content-wrapper clear">
+
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
+
+				
+					
+<article id="post-43" class="post-43 post type-post status-publish format-quote has-post-thumbnail hentry category-uncategorized tag-arduino tag-interrupt tag-lcd tag-video-game post_format-post-format-quote">
+	<header class="entry-header">
+		<h1 class="entry-title">Arduino Video Game</h1>
+		<div class="entry-meta">
+			<span class="posted-on">Posted on <a href="./Arduino Video Game _ My Blog_files/Arduino Video Game _ My Blog.html" rel="bookmark"><time class="entry-date published" datetime="2013-07-23T07:25:41+00:00">July 23, 2013</time></a></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://nakulrao.wordpress.com/author/electronicsmail/">Nakul</a></span></span>		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+	
+	<div class="entry-content">
+		<p style="text-align:justify;">I have always wanted to build a video game and finally, I have done it in my own little way.</p>
+<p style="text-align:justify;">I knew I wanted to build a space ship kind of shooter game. Two player ofcourse. Another thing I knew was that I wanted to use interrupts for all the button press – forward, backward, right, left and shoot. There were a lot of design decisions to be made in this project. The first one was what should be the shape of the spaceship and the bullet/missile. I tried out a few different choices and rounded in on one.</p>
+<p style="text-align:justify;">Simultaneously, I started looking for some interrupt libraries. There are several available actually. After trying out a couple, I decided to go with ‘pinchangeint-v2.19beta’.</p>
+<p style="text-align:justify;">First, I tried to get a spaceship on the screen shooting continuous bullets which worked just fine. And I forgot to mention this earlier, but I am using a 16×2 character LCD display because, well, I have no other option. I have a few spare 16×2 lcd lying around and I thought it would be a good idea to use them. I do agree that it makes the game very restricted, but it I went ahead with it anyhow.</p>
+<p style="text-align:justify;">I had to come up with an overall scheme of things. How would everything work together? As I mentioned earlier, the button press will be handled by interrupts. The most important thing to decide would be to decide how to update the screen. There is a main function which will draw all the characters on the lcd. The other important function is to detect collisions between ships, missiles and obstructions. And there are a bunch of other functions to calculate positions of missiles and ships.</p>
+<p style="text-align:justify;">When you look at the code you will find that it is kind of messy. I could have made it neater and organized it better. The functions are written separately for the two players. Instead, I could have made a single function and then pass some parameter into the function. I hope you get the idea. In my defense I would say that I had no incentive to do any of that. I did a quick and dirty implementation and if it works I am happy with it.</p>
+<p style="text-align:justify;">Here is a few pictures of the hardware and the game in action.</p>
+<figure data-shortcode="caption" id="attachment_44" style="width: 300px;" class="wp-caption aligncenter"><a href="https://nakulrao.files.wordpress.com/2013/07/20130605_110334.jpg"><img class="size-medium wp-image-44 " title="Video Game Spaceship Character" alt="Video Game Spaceship Character" src="./Arduino Video Game _ My Blog_files/20130605_110334.jpg" width="300" height="225"></a><figcaption class="wp-caption-text">Video Game Spaceship Character</figcaption></figure>
+<p style="text-align:center;">
+</p><figure data-shortcode="caption" id="attachment_45" style="width: 300px;" class="wp-caption aligncenter"><a href="https://nakulrao.files.wordpress.com/2013/07/20130605_110401.jpg"><img class="size-medium wp-image-45 " title="Different options for Spaceship Charecter" alt="Different options for Spaceship Charecter" src="./Arduino Video Game _ My Blog_files/20130605_110401.jpg" width="300" height="225"></a><figcaption class="wp-caption-text">Different options for Spaceship Charecter</figcaption></figure>
+<p style="text-align:justify;">
+</p><p style="text-align:justify;">
+</p><p style="text-align:justify;"></p><div class="jetpack-video-wrapper"><span class="embed-youtube" style="text-align:center; display: block;"><iframe class="youtube-player" type="text/html" src="./Arduino Video Game _ My Blog_files/JgQqy9P-3mE.html" frameborder="0" allowfullscreen="true" data-ratio="0.5625" data-width="640" data-height="360" style="display: block; margin: 0px; width: 640px; height: 360px;"></iframe></span></div><p></p>
+<p style="text-align:justify;">
+</p><p style="text-align:justify;"></p><div class="jetpack-video-wrapper"><span class="embed-youtube" style="text-align:center; display: block;"><iframe class="youtube-player" type="text/html" src="./Arduino Video Game _ My Blog_files/xqOkMi2o0E0.html" frameborder="0" allowfullscreen="true" data-ratio="0.5625" data-width="640" data-height="360" style="display: block; margin: 0px; width: 640px; height: 360px;"></iframe></span></div><p></p>
+<p style="text-align:justify;">
+</p><figure data-shortcode="caption" id="attachment_47" style="width: 300px;" class="wp-caption aligncenter"><a href="https://nakulrao.files.wordpress.com/2013/07/20130722_192212.jpg"><img class="size-medium wp-image-47 " title="Video Game Borard" alt="Video Game Borard" src="./Arduino Video Game _ My Blog_files/20130722_192212.jpg" width="300" height="225"></a><figcaption class="wp-caption-text">Video Game Borard</figcaption></figure>
+<p style="text-align:center;">
+</p><p style="text-align:justify;">
+</p><figure data-shortcode="caption" id="attachment_46" style="width: 225px;" class="wp-caption aligncenter"><a href="https://nakulrao.files.wordpress.com/2013/07/20130722_192233.jpg"><img class="size-medium wp-image-46 " title="Game in Action" alt="Game in Action" src="./Arduino Video Game _ My Blog_files/20130722_192233.jpg" width="225" height="300"></a><figcaption class="wp-caption-text">Game in Action</figcaption></figure>
+<p>&nbsp;</p>
+<figure data-shortcode="caption" id="attachment_48" style="width: 300px;" class="wp-caption aligncenter"><a href="https://nakulrao.files.wordpress.com/2013/07/20130722_194332.jpg"><img class="size-medium wp-image-48 " title="JK Megamini - Arduino 2560 Clone" alt="JK Megamini - Arduino 2560 Clone" src="./Arduino Video Game _ My Blog_files/20130722_194332.jpg" width="300" height="225"></a><figcaption class="wp-caption-text">JK Megamini – Arduino 2560 Clone</figcaption></figure>
+<p>&nbsp;</p>
+<p style="text-align:center;">
+</p><p style="text-align:justify;">
+</p><p style="text-align:justify;"></p><div class="jetpack-video-wrapper"><span class="embed-youtube" style="text-align:center; display: block;"><iframe class="youtube-player" type="text/html" src="./Arduino Video Game _ My Blog_files/c8C7xiSPxM0.html" frameborder="0" allowfullscreen="true" data-ratio="0.5625" data-width="640" data-height="360" style="display: block; margin: 0px; width: 640px; height: 360px;"></iframe></span></div><p></p>
+<p style="text-align:justify;">
+</p><p style="text-align:justify;">Note from the video that the obstacles/barriers are designed to stop only the ship and not the missiles.</p>
+<p style="text-align:justify;">The source code is available at <a href="https://github.com/nakul13/Arduino-Video-Game">https://github.com/nakul13/Arduino-Video-Game</a>.</p>
+<p style="text-align:justify;">
+
+</p><div class="wpcnt">
+<div class="wpa">
+<a class="wpa-about" href="http://wordpress.com/about-these-ads/" rel="nofollow">About these ads</a>
+<script type="text/javascript">
+		var wpcom_adclk_hovering = false;
+		var wpcom_adclk_recorded = false;
+		var wpcom_adclk_theme = "Goran";
+		var wpcom_adclk_slot = "wpcom_below_post";
+		var wpcom_adclk_network = ( typeof wpcom_adclk_network === "undefined" ) ? "" : wpcom_adclk_network ;
+
+		jQuery(document).ready( function() {
+			function wpcom_adclk_hover_yes() { wpcom_adclk_hovering = true; }
+			function wpcom_adclk_hover_no() { wpcom_adclk_hovering = false; }
+			jQuery(".wpa").click(wpcom_adclk_click);
+			jQuery(".wpa iframe").hover( wpcom_adclk_hover_yes, wpcom_adclk_hover_no );
+			jQuery(".wpa object").hover( wpcom_adclk_hover_yes, wpcom_adclk_hover_no );
+
+			jQuery(window).blur( function() {
+				if ( wpcom_adclk_hovering ) { wpcom_adclk_click(); }
+			});
+		});
+
+		function wpcom_adclk_impression() {
+			var stat_gif = document.location.protocol + "//pixel.wp.com/g.gif?v=wpcom-no-pv";
+			stat_gif += "&x_ads_imp_theme=" + wpcom_adclk_theme;
+			stat_gif += "&x_ads_imp_placement="+wpcom_adclk_slot;
+			stat_gif += "&x_ads_imp_network=" + wpcom_adclk_network;
+			stat_gif += "&x_ads_imp_theme_network="+wpcom_adclk_theme+"_"+wpcom_adclk_network;
+			new Image().src = stat_gif + "&baba=" + Math.random();
+			return true;
+		}
+
+		function wpcom_adclk_click() {
+			if (wpcom_adclk_recorded) { return true; } // no double counting
+			var stat_gif = document.location.protocol + "//pixel.wp.com/g.gif?v=wpcom-no-pv";
+			stat_gif += "&x_ads_click_theme=" + wpcom_adclk_theme;
+			stat_gif += "&x_ads_click_placement="+wpcom_adclk_slot;
+			stat_gif += "&x_ads_click_network=" + wpcom_adclk_network;
+			stat_gif += "&x_ads_click_theme_network="+wpcom_adclk_theme+"_"+wpcom_adclk_network;
+
+			new Image().src = stat_gif + "&baba=" + Math.random();
+			wpcom_adclk_recorded = true;
+			var now=new Date(); var end=now.getTime()+250;
+			while(true){now=new Date();if(now.getTime()>end){break;}}
+			return true;
+		}
+	
+if ( typeof GA_googleAddAttr == 'function' ) {
+GA_googleAddAttr("LangId", "1");
+GA_googleAddAttr("Domain", "nakulrao.wordpress.com");
+GA_googleAddAttr("BlogId", "55141917");
+GA_googleAddAttr("PageURL", "https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/");
+GA_googleAddAttr("Autotag", "technology");
+GA_googleAddAttr("Tag", "arduino");
+GA_googleAddAttr("Tag", "interrupt");
+GA_googleAddAttr("Tag", "lcd");
+GA_googleAddAttr("Tag", "video-game");
+GA_googleAddAdSensePageAttr("google_page_url", "https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/");
+GA_googleFillSlot("wpcom_below_post");
+}
+</script></div></div><div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-43" class="share-twitter sd-button share-icon" href="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/?share=twitter&nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter<span class="share-count">3</span></span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-43" class="share-facebook sd-button share-icon" href="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/?share=facebook&nb=1" target="_blank" title="Share on Facebook"><span>Facebook</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-43" class="share-google-plus-1 sd-button share-icon" href="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/?share=google-plus-1&nb=1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-end"></li></ul></div></div></div><div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-loaded" id="like-post-wrapper-55141917-43-558d9117a1497" data-src="//widgets.wp.com/likes/#blog_id=55141917&amp;post_id=43&amp;origin=nakulrao.wordpress.com&amp;obj_id=55141917-43-558d9117a1497" data-name="like-post-frame-55141917-43-558d9117a1497"><h3 class="sd-title">Like this:</h3><div class="likes-widget-placeholder post-likes-widget-placeholder" style="height: 55px; display: none;"><span class="button"><span>Like</span></span> <span class="loading">Loading...</span></div><iframe class="post-likes-widget jetpack-likes-widget" name="like-post-frame-55141917-43-558d9117a1497" height="55px" width="100%" frameborder="0" src="./Arduino Video Game _ My Blog_files/saved_resource(9).html"></iframe><span class="sd-text-color"></span><a class="sd-link-color"></a></div>
+<div id="jp-relatedposts" class="jp-relatedposts" style="display: block;">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<div class="jp-relatedposts-items jp-relatedposts-items-minimal"><p class="jp-relatedposts-post jp-relatedposts-post0" data-post-id="51" data-post-format="quote"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://nakulrao.wordpress.com/2013/08/03/virtual-machine-for-arduino/" title="Virtual Machine for Arduino
+
+Why a virtual machine? Firstly, I had a lot of time. Secondly, because it can be done. Also, it is fascinating to me that a device can keep its actual hardware hidden and project an entirely different hardware to the user. I have to say that I have not had…" rel="nofollow" data-origin="43" data-position="0">Virtual Machine for Arduino</a></span><span class="jp-relatedposts-post-context">In "Arduino"</span></p><p class="jp-relatedposts-post jp-relatedposts-post1" data-post-id="28" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://nakulrao.wordpress.com/2013/07/12/pong/" title="Pong
+
+I have attached a video and a picture – a single player pong game and a two player version. The two games are written in Processing. I didn’t find a way to convert it into an exe package. So, to run it you must have Processing installed in your PC.…" rel="nofollow" data-origin="43" data-position="1">Pong</a></span><span class="jp-relatedposts-post-context">In "Pong"</span></p><p class="jp-relatedposts-post jp-relatedposts-post2" data-post-id="18" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://nakulrao.wordpress.com/2013/07/12/adxl345/" title="ADXL345
+
+I recently got this sensor ADXL345, a digital accelerometer. I immediately set out on doing something with this sensor, simple yet not pointless.The first thing to do is to read the accelerometer values. The sensor supports I2C and SPI. I decided to go with SPI. On reading the sensor values,…" rel="nofollow" data-origin="43" data-position="2">ADXL345</a></span><span class="jp-relatedposts-post-context">In "ADXL345"</span></p></div></div></div>	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="post-format-link"><a class="genericon genericon-quote" href="https://nakulrao.wordpress.com/type/quote/" title="All Quote posts"><span class="screen-reader-text">Quote</span></a></span><span class="tags-links">Tagged <a href="https://nakulrao.wordpress.com/tag/arduino/" rel="tag">Arduino</a>, <a href="https://nakulrao.wordpress.com/tag/interrupt/" rel="tag">interrupt</a>, <a href="https://nakulrao.wordpress.com/tag/lcd/" rel="tag">lcd</a>, <a href="https://nakulrao.wordpress.com/tag/video-game/" rel="tag">video game</a></span><span class="comments-link"><a href="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/#comments">7 Comments</a></span>	</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+						<nav class="navigation post-navigation" role="navigation">
+		<h1 class="screen-reader-text">Post navigation</h1>
+		<div class="nav-links">
+			<a href="https://nakulrao.wordpress.com/2013/07/12/cryptanalysis/" rel="prev"><span class="meta-nav">Previous Post</span>Cryptanalysis</a><a href="https://nakulrao.wordpress.com/2013/08/03/virtual-machine-for-arduino/" rel="next"><span class="meta-nav">Next Post</span>Virtual Machine for&nbsp;Arduino</a>		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	
+					
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			7 thoughts on “<span>Arduino Video Game</span>”		</h2>
+
+		<ol class="comment-list">
+					<li id="comment-17" class="pingback even thread-even depth-1 highlander-comment">
+			<div class="comment-body">
+				Pingback: <a href="http://hackaday.com/2013/07/23/a-video-game-with-custom-lcd-characters/" rel="external nofollow" class="url">A Video Game with custom LCD characters</a> 			</div>
+</li><!-- #comment-## -->
+		<li id="comment-18" class="pingback odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<div class="comment-body">
+				Pingback: <a href="http://randommod.com/2013/07/23/a-video-game-with-custom-lcd-characters/" rel="external nofollow" class="url">rndm(mod) » A Video Game with custom LCD characters</a> 			</div>
+</li><!-- #comment-## -->
+		<li id="comment-19" class="pingback even thread-even depth-1 highlander-comment">
+			<div class="comment-body">
+				Pingback: <a href="http://www.raspberrypiboards.com/a-video-game-with-custom-lcd-characters/" rel="external nofollow" class="url">A Video Game with custom LCD characters - RaspberryPiBoards</a> 			</div>
+</li><!-- #comment-## -->
+		<li id="comment-20" class="pingback odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<div class="comment-body">
+				Pingback: <a href="http://www.mprosablog.info/?p=15052" rel="external nofollow" class="url">A Video Game with custom LCD characters | Blog of MPRosa</a> 			</div>
+</li><!-- #comment-## -->
+		<li id="comment-21" class="pingback even thread-even depth-1 highlander-comment">
+			<div class="comment-body">
+				Pingback: <a href="http://oppatec.com/2013/07/23/a-video-game-with-custom-lcd-characters/" rel="external nofollow" class="url">A Video Game with custom LCD characters | OPPATEC</a> 			</div>
+</li><!-- #comment-## -->
+		<li id="comment-28" class="pingback odd alt thread-odd thread-alt depth-1 highlander-comment">
+			<div class="comment-body">
+				Pingback: <a href="http://freeelectronicscircuit.wordpress.com/2013/07/25/diy-video-game-circuit/" rel="external nofollow" class="url">DIY- Video Game Circuit | Free Electronic Circuits</a> 			</div>
+</li><!-- #comment-## -->
+		<li id="comment-98" class="comment even thread-even depth-1 highlander-comment">
+			<article id="div-comment-98" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="./Arduino Video Game _ My Blog_files/b204a1a7599bcabc106c749f05a82eb3" class="avatar avatar-48 grav-hashed grav-hijack" height="48" width="48" id="grav-b204a1a7599bcabc106c749f05a82eb3-0">						<b class="fn"><a href="http://www.victoriasanguine.com/" rel="external nofollow" class="url">text adventure</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/comment-page-1/#comment-98">
+							<time datetime="2014-10-06T14:17:51+00:00">
+								October 6, 2014 at 2:17 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Great information. Lucky me I discovered your<br>
+site by chance (stumbleupon). I have book-marked it for later!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a class="comment-reply-link" href="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/?replytocom=98#respond" onclick="return addComment.moveForm( &quot;div-comment-98&quot;, &quot;98&quot;, &quot;respond&quot;, &quot;43&quot; )" aria-label="Reply to text adventure">Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+	
+							<div id="respond" class="comment-respond js">
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="https://nakulrao.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate="">
+																										
+
+
+												<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="53e0a1ccb2"><input type="hidden" name="_wp_http_referer" value="/2013/07/23/arduino-video-game/">
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest">
+
+<div class="comment-form-field comment-textarea">
+	
+	<div id="comment-form-comment"><textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; -webkit-transition: none; transition: none; height: 0px !important; min-height: 0px !important; font-family: &#39;Noto Sans&#39;, sans-serif; font-size: 14px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; text-decoration: none; word-spacing: 0px; text-indent: 0px; line-height: normal; width: 678px;" class="autosizejs "></textarea><textarea id="comment" name="comment" title="Enter your comment here..." placeholder="Enter your comment here..." style="height: 125px; overflow: hidden; word-wrap: break-word; resize: none;"></textarea></div>
+</div>
+
+<div id="comment-form-identity" style="display: none;">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="./Arduino Video Game _ My Blog_files/saved_resource.html" width="24" height="24" scrolling="no" allowtransparency="true" seamless="seamless" frameborder="0"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="./Arduino Video Game _ My Blog_files/ad516503a11cd5ca435acc9bb6523536" alt="Gravatar" width="25" class="no-grav">
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value=""></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value=""></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="text" value=""></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Arduino Video Game _ My Blog_files/wplogo.png" alt="WordPress.com Logo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="">
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="">
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="">
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your <span class="skimlinks-unlinked">WordPress.com</span> account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'wordpress' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Arduino Video Game _ My Blog_files/ad516503a11cd5ca435acc9bb6523536" alt="Twitter picture" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="">
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="">
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="">
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'twitter' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Arduino Video Game _ My Blog_files/ad516503a11cd5ca435acc9bb6523536" alt="Facebook photo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="">
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="">
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="">
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'facebook' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Arduino Video Game _ My Blog_files/ad516503a11cd5ca435acc9bb6523536" alt="Google+ photo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="">
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="">
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="">
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'googleplus' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe" style="display: none;">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6"> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of new comments via email.</label></p></div>
+
+						
+						<p class="form-submit" style="display: none;"><input name="submit" type="submit" id="comment-submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="43" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="5332a932fa"></p>
+<input type="hidden" name="genseq" value="1435341079">
+<p style="display: none;"></p>					<input type="hidden" id="ak_js" name="ak_js" value="1435341085351"></form>
+							</div><!-- #respond -->
+			<div style="clear: both"></div>
+</div><!-- #comments -->
+
+				
+			</main><!-- #main -->
+		</div><!-- #primary -->
+
+
+		<div id="secondary" class="widget-area" role="complementary">
+		<aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://nakulrao.wordpress.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:">
+				</label>
+				<input type="submit" class="search-submit" value="Search">
+			</form></aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
+					<li>
+				<a href="https://nakulrao.wordpress.com/2013/08/18/sensitivity-of-image-sensors-to-ir/">Sensitivity of Image Sensors to&nbsp;IR</a>
+						</li>
+					<li>
+				<a href="https://nakulrao.wordpress.com/2013/08/03/virtual-machine-for-arduino/">Virtual Machine for&nbsp;Arduino</a>
+						</li>
+					<li>
+				<a href="./Arduino Video Game _ My Blog_files/Arduino Video Game _ My Blog.html">Arduino Video Game</a>
+						</li>
+					<li>
+				<a href="https://nakulrao.wordpress.com/2013/07/12/cryptanalysis/">Cryptanalysis</a>
+						</li>
+					<li>
+				<a href="https://nakulrao.wordpress.com/2013/07/12/reverse-engineering-of-chips/">Reverse Engineering of&nbsp;Chips</a>
+						</li>
+				</ul>
+		</aside><aside id="blog_subscription-2" class="widget widget_blog_subscription"><h2 class="widget-title"><label for="subscribe-field">Follow Blog via Email</label></h2>
+				<form action="https://subscribe.wordpress.com/" method="post" accept-charset="utf-8" id="subscribe-blog">
+											<p>Enter your email address to follow this blog and receive notifications of new posts by email.</p>
+						<p><input type="text" name="email" style="width: 95%; padding: 1px 2px" placeholder="Enter your email address" value="" id="subscribe-field"></p>
+					
+					<p>
+						<input type="hidden" name="action" value="subscribe">
+						<input type="hidden" name="blog_id" value="55141917">
+						<input type="hidden" name="source" value="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/">
+						<input type="hidden" name="sub-type" value="widget">
+						<input type="hidden" name="redirect_fragment" value="blog_subscription-2">
+						<input type="hidden" id="_wpnonce" name="_wpnonce" value="4df48b881b">						<input type="submit" value="Follow">
+					</p>
+				</form>
+			
+</aside><aside id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<ul>
+	<li><a href="https://nakulrao.wordpress.com/2013/08/">August 2013</a></li>
+	<li><a href="https://nakulrao.wordpress.com/2013/07/">July 2013</a></li>
+		</ul>
+</aside><aside id="meta-2" class="widget widget_meta"><h2 class="widget-title">Meta</h2>			<ul>
+			<li><a href="https://signup.wordpress.com/start/?ref=wplogin">Register</a></li>			<li><a href="https://nakulrao.wordpress.com/wp-login.php">Log in</a></li>
+			<li><a href="https://nakulrao.wordpress.com/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://nakulrao.wordpress.com/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+<li><a href="http://wordpress.com/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.com</a></li>			</ul>
+</aside>	</div><!-- #secondary -->
+	
+</div><!-- .content-wrapper -->
+
+	</div><!-- #content -->
+
+	
+
+	<div id="tertiary" class="footer-widget-area" role="complementary">
+		<div class="footer-widget-wrapper clear">
+			
+							<div class="footer-widget">
+					<aside id="text-3" class="widget widget_text">			<div class="textwidget">Welcome to Nakul Rao I 's Blog.
+Hope to see you again.</div>
+		</aside>				</div><!-- .footer-widget -->
+			
+					</div><!-- .footer-widget-wrapper -->
+	</div><!-- #tertiary -->
+
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info">
+			<a href="https://wordpress.com/?ref=footer_blog">Blog at WordPress.com</a>.
+			<span class="sep"> | </span>
+			<a href="https://wordpress.com/themes/goran/" title="Learn more about this theme">The Goran Theme</a>.		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<!-- wpcom_wp_footer -->
+<script type="text/javascript" src="./Arduino Video Game _ My Blog_files/gprofiles.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Arduino Video Game _ My Blog_files/wpgroho.js"></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-b204a1a7599bcabc106c749f05a82eb3">
+	</div>
+	</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/nakulrao.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/nakulrao.wordpress.com\/wp-login.php?action=logout&_wpnonce=fda3df5b23","homeURL":"https:\/\/nakulrao.wordpress.com\/","postID":"43","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"0","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Arduino Video Game _ My Blog_files/saved_resource(5)"></script>
+
+	<div id="bit" class="loggedout-follow-normal" style="bottom: -298px;">
+		<a class="bsub" href="javascript:void(0)"><span id="bsub-text">Follow</span></a>
+		<div id="bitsubscribe">
+
+					<h3><label for="loggedout-follow-field">Follow “My Blog”</label></h3>
+
+			<form action="https://subscribe.wordpress.com/" method="post" accept-charset="utf-8" id="loggedout-follow">
+			<p>Get every new post delivered to your Inbox.</p>
+
+			<p id="loggedout-follow-error" style="display: none;"></p>
+
+			
+			<p><input type="email" name="email" value="Enter your email address" onfocus="this.value=(this.value==&quot;Enter your email address&quot;) ? &quot;&quot; : this.value;" onblur="this.value=(this.value==&quot;&quot;) ? &quot;Enter your email address&quot; : this.value;" id="loggedout-follow-field"></p>
+
+			<input type="hidden" name="action" value="subscribe">
+			<input type="hidden" name="blog_id" value="55141917">
+			<input type="hidden" name="source" value="https://nakulrao.wordpress.com/2013/07/23/arduino-video-game/">
+			<input type="hidden" name="sub-type" value="loggedout-follow">
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="4df48b881b"><input type="hidden" name="_wp_http_referer" value="/2013/07/23/arduino-video-game/">
+			<p id="bsub-subscribe-button"><input type="submit" value="Sign me up"></p>
+			</form>
+					<div id="bsub-credit"><a href="https://wordpress.com/?ref=lof">Build a website with WordPress.com</a></div>
+		</div><!-- #bitsubscribe -->
+	</div><!-- #bit -->
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/nakulrao.wordpress.com\/2013\/07\/23\/arduino-video-game\/":43};
+		window.WPCOM_jetpack = false;
+				window.WPCOM_site_ID = 55141917;
+			</script>
+		<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+				<iframe src="./Arduino Video Game _ My Blog_files/master.html" scrolling="no" id="likes-master" name="likes-master" style="display:none;"></iframe>
+		<div id="likes-other-gravatars"><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script type="text/javascript">
+		//<![CDATA[
+			var jetpackLikesWidgetQueue = [];
+			var jetpackLikesWidgetBatch = [];
+			var jetpackLikesMasterReady = false;
+
+			function JetpackLikespostMessage( message, target ) {
+				if ( "string" === typeof message ){
+					try{
+						message = JSON.parse( message );
+					}
+					catch(e) {
+						return;
+					}
+				}
+
+				pm( {
+					target: target,
+					type: 'likesMessage',
+					data: message,
+					origin: '*'
+				} );
+			}
+
+			function JetpackLikesBatchHandler() {
+				var requests = [];
+				jQuery( 'div.jetpack-likes-widget-unloaded' ).each( function( i ) {
+					if ( jetpackLikesWidgetBatch.indexOf( this.id ) > -1 )
+						return;
+					jetpackLikesWidgetBatch.push( this.id );
+					var regex = /like-(post|comment)-wrapper-(\d+)-(\d+)-(\w+)/;
+					var match = regex.exec( this.id );
+					if ( ! match || match.length != 5 )
+						return;
+
+					var info = {
+						blog_id: match[2],
+						width:   this.width
+					};
+
+					if ( 'post' == match[1] ) {
+						info.post_id = match[3];
+					} else if ( 'comment' == match[1] ) {
+						info.comment_id = match[3];
+					}
+
+					info.obj_id = match[4];
+
+					requests.push( info );
+				});
+
+				if ( requests.length > 0 ) {
+					JetpackLikespostMessage( { event: 'initialBatch', requests: requests }, window.frames['likes-master'] );
+				}
+			}
+
+			function JetpackLikesMessageListener( event ) {
+				if ( "undefined" == typeof event.event )
+					return;
+
+				if ( 'masterReady' == event.event ) {
+					jQuery( document ).ready( function() {
+						jetpackLikesMasterReady = true;
+
+						var stylesData = {
+								event: 'injectStyles'
+						};
+
+						if ( jQuery( 'iframe.admin-bar-likes-widget' ).length > 0 ) {
+							JetpackLikespostMessage( { event: 'adminBarEnabled' }, window.frames[ 'likes-master' ] );
+
+							stylesData.adminBarStyles = {
+								background: jQuery( '#wpadminbar .quicklinks li#wp-admin-bar-wpl-like > a' ).css( 'background' ),
+								isRtl: ( 'rtl' == jQuery( '#wpadminbar' ).css( 'direction' ) )
+							};
+						}
+
+						if ( !window.addEventListener )
+							jQuery( '#wp-admin-bar-admin-bar-likes-widget' ).hide();
+
+						stylesData.textStyles = {
+							color: jQuery( '.sd-text-color').css( 'color' ),
+							fontFamily: jQuery( '.sd-text-color' ).css( 'font-family' ),
+							fontSize: jQuery( '.sd-text-color' ).css( 'font-size' ),
+							direction: jQuery( '.sd-text-color' ).css( 'direction' ),
+							fontWeight: jQuery( '.sd-text-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-text-color' ).css( 'font-style' ),
+							textDecoration: jQuery( '.sd-text-color' ).css('text-decoration')
+						};
+
+						stylesData.linkStyles = {
+							color: jQuery( '.sd-link-color' ).css('color'),
+							fontFamily: jQuery( '.sd-link-color' ).css('font-family'),
+							fontSize: jQuery( '.sd-link-color' ).css('font-size'),
+							textDecoration: jQuery( '.sd-link-color' ).css('text-decoration'),
+							fontWeight: jQuery( '.sd-link-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-link-color' ).css( 'font-style' )
+						};
+
+						JetpackLikespostMessage( stylesData, window.frames[ 'likes-master' ] );
+
+						JetpackLikesBatchHandler();
+
+						jQuery( document ).on( 'inview', 'div.jetpack-likes-widget-unloaded', function() {
+							jetpackLikesWidgetQueue.push( this.id );
+						});
+					});
+				}
+
+				if ( 'showLikeWidget' == event.event ) {
+					jQuery( '#' + event.id + ' .post-likes-widget-placeholder'  ).fadeOut( 'fast', function() {
+						jQuery( '#' + event.id + ' .post-likes-widget' ).fadeIn( 'fast', function() {
+							JetpackLikespostMessage( { event: 'likeWidgetDisplayed', blog_id: event.blog_id, post_id: event.post_id, obj_id: event.obj_id }, window.frames['likes-master'] );
+						});
+					});
+				}
+
+				if ( 'clickReblogFlair' == event.event ) {
+					wpcom_reblog.toggle_reblog_box_flair( event.obj_id );
+				}
+
+				if ( 'showOtherGravatars' == event.event ) {
+					var $container = jQuery( '#likes-other-gravatars' );
+					var $list = $container.find( 'ul' );
+
+					$container.hide();
+					$list.html( '' );
+
+					$container.find( '.likes-text span' ).text( event.total );
+
+					jQuery.each( event.likers, function( i, liker ) {
+						$list.append( '<li class="' + liker.css_class + '"><a href="' + liker.profile_URL + '" class="wpl-liker" rel="nofollow" target="_parent"><img src="' + liker.avatar_URL + '" alt="' + liker.name + '" width="30" height="30" style="padding-right: 3px;" /></a></li>');
+					} );
+
+					var offset = jQuery( "[name='" + event.parent + "']" ).offset();
+
+					$container.css( 'left', offset.left + event.position.left - 10 + 'px' );
+					$container.css( 'top', offset.top + event.position.top - 33 + 'px' );
+
+					var rowLength = Math.floor( event.width / 37 );
+					var height = ( Math.ceil( event.likers.length / rowLength ) * 37 ) + 13;
+					if ( height > 204 ) {
+						height = 204;
+					}
+
+					$container.css( 'height', height + 'px' );
+					$container.css( 'width', rowLength * 37 - 7 + 'px' );
+
+					$list.css( 'width', rowLength * 37 + 'px' );
+
+					$container.fadeIn( 'slow' );
+
+					var scrollbarWidth = $list[0].offsetWidth - $list[0].clientWidth;
+					if ( scrollbarWidth > 0 ) {
+						$container.width( $container.width() + scrollbarWidth );
+						$list.width( $list.width() + scrollbarWidth );
+					}
+				}
+			}
+
+			pm.bind( 'likesMessage', function(e) { JetpackLikesMessageListener(e); } );
+
+			jQuery( document ).click( function( e ) {
+				var $container = jQuery( '#likes-other-gravatars' );
+
+				if ( $container.has( e.target ).length === 0 ) {
+					$container.fadeOut( 'slow' );
+				}
+			});
+
+			function JetpackLikesWidgetQueueHandler() {
+				var wrapperID;
+				if ( ! jetpackLikesMasterReady ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				if ( jetpackLikesWidgetQueue.length > 0 ) {
+					// We may have a widget that needs creating now
+					var found = false;
+					while( jetpackLikesWidgetQueue.length > 0 ) {
+						// Grab the first member of the queue that isn't already loading.
+						wrapperID = jetpackLikesWidgetQueue.splice( 0, 1 )[0];
+						if ( jQuery( '#' + wrapperID ).hasClass( 'jetpack-likes-widget-unloaded' ) ) {
+							found = true;
+							break;
+						}
+					}
+					if ( ! found ) {
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				} else if ( jQuery( 'div.jetpack-likes-widget-unloaded' ).length > 0 ) {
+					// Grab any unloaded widgets for a batch request
+					JetpackLikesBatchHandler();
+
+					// Get the next unloaded widget
+					wrapperID = jQuery( 'div.jetpack-likes-widget-unloaded' ).first()[0].id;
+					if ( ! wrapperID ) {
+						// Everything is currently loaded
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				}
+
+				if ( 'undefined' === typeof wrapperID ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				var $wrapper = jQuery( '#' + wrapperID );
+				$wrapper.find( 'iframe' ).remove();
+
+				if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='22px' width='68px' frameBorder='0' scrolling='no' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				} else {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='55px' width='100%' frameBorder='0' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				}
+
+				$wrapper.removeClass( 'jetpack-likes-widget-unloaded' ).addClass( 'jetpack-likes-widget-loading' );
+
+				$wrapper.find( 'iframe' ).load( function( e ) {
+					var $iframe = jQuery( e.target );
+					$wrapper.removeClass( 'jetpack-likes-widget-loading' ).addClass( 'jetpack-likes-widget-loaded' );
+
+					JetpackLikespostMessage( { event: 'loadLikeWidget', name: $iframe.attr( 'name' ), width: $iframe.width() }, window.frames[ 'likes-master' ] );
+
+					if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+						$wrapper.find( 'iframe' ).Jetpack( 'resizeable' );
+					}
+				});
+				setTimeout( JetpackLikesWidgetQueueHandler, 250 );
+			}
+			JetpackLikesWidgetQueueHandler();
+		//]]>
+		</script>
+<script type="text/javascript" src="./Arduino Video Game _ My Blog_files/form.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var JetpackEmojiSettings = {"base_url":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/emoji\/twemoji\/"};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Arduino Video Game _ My Blog_files/saved_resource(6)"></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "nakulrao.wordpress.com";
+	</script>
+	<script type="text/javascript" src="./Arduino Video Game _ My Blog_files/725X1342.skimlinks.js"></script><script src="./Arduino Video Game _ My Blog_files/w.js" type="text/javascript" async="" defer=""></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'55141917','blog_tz':'5','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'55141917','v':'wpcom','tz':'5','user_id':'0','post':'43','subd':'nakulrao'}]);
+_stq.push(['extra', {'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWFnNncxc1tjZG9XVXhRdHxxbixXRU5XS21VTDFrSUM5TFFHQTBuMDQucnlzdi5CeFdNVlNZQSs1OTZrLm13TDB4dUlrJmF6bVIlLFFCPUJZMEdKRnF1U0JRWktofDB3aSxbV0ZndWkmbXI1VS40Tm8tNUZHQ2FWQ3hXaGtHTFlnUnpKaV16UyY3V3M/V0NZTD9zfnBvZ0JoP2EtaDlQU1BdQXRXWXc1dFpKdVpiUi4sT2FEeV85Vy4vVyxbUlFDTDJUTW5SL2YsR3V1Z3ZIPyVKeHpGZEh0T21Zfk5OL2dVelFzU0Q9YT9xJTh3P2xINVY3ZEFHUyszLkUlSzdndV8rVEVBMVoyM3Q4MWZ5JTJ0XzUlLkk='}]);
+_stq.push([ 'clickTrackerInit', '55141917', '43' ]);
+	</script>
+<noscript>&lt;img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /&gt;</noscript>
+<img src="./Arduino Video Game _ My Blog_files/g.gif" id="wpstats"><script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+
+<img src="https://t.skimresources.com/api/?call=track&data=%7B%22pubcode%22%3A%22725X1342%22%2C%20%22referrer%22%3A%22https%3A%2F%2Fnakulrao.wordpress.com%2F2013%2F07%2F23%2Farduino-video-game%2F%22%2C%20%22pref%22%3A%22https%3A%2F%2Fnakulrao.wordpress.com%2F%22%2C%20%22site%22%3A%22nakulrao.wordpress.com%22%2C%20%22url%22%3A%22https%3A%2F%2Fnakulrao.files.wordpress.com%2F2013%2F07%2F20130605_110334.jpg%22%2C%20%22custom%22%3A%22false%22%2C%20%22xtz%22%3A-120%2C%20%22uuid%22%3A%22549d8615724d4ff99270a22092096278%22%2C%20%22slmcid%22%3A%22%22%2C%20%22product%22%3A%221%22%7D&rnd=0.18977446504868567" width="1" height="1" style="display: none;"></body></html>

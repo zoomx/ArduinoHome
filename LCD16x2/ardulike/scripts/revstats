@@ -1,0 +1,29 @@
+#!/bin/bash
+
+ROOT=$(readlink -f "$(dirname "$0")/../")
+DST="/tmp/ardulike"
+BUILDDIR="$DST/ardulike"
+
+rm -fr "$DST"
+mkdir -p "$DST"
+git clone "$ROOT" "$DST" &>/dev/null
+
+pushd "$DST" &>/dev/null
+
+REVS=$(git log --format=oneline --reverse -- '*.cpp' '*.ino' | awk '{print $1}' | cut -c-8)
+RCNT=0
+
+for REV in $REVS; do
+  git co -b _plot "$REV" &>/dev/null
+  pushd "$BUILDDIR" &>/dev/null
+  MEM=$(make clean &>/dev/null && make 2>&1 | grep '^\(Program\|Data\):' | awk '{print $2}' | tr '\n' ' ')
+  MEM="${MEM% }"
+  popd &>/dev/null
+  git co master &>/dev/null
+  git br -D _plot &>/dev/null
+  echo "$RCNT $MEM $REV"
+  RCNT=$(( $RCNT + 1 ))
+done
+
+popd &>/dev/null
+rm -fr "$DST"
