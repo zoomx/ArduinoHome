@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="http://forum.arduino.cc/Themes/default/css/index.css?alph21">
+	<link rel="stylesheet" type="text/css" href="http://forum.arduino.cc/Themes/default/css/responsive.css?alph21">
+	<link rel="stylesheet" type="text/css" href="http://forum.arduino.cc/Themes/default/css/jquery.sceditor.css?alph21">
+	<style>
+img.avatar { max-width: 65px; max-height: 65px; }</style>
+	<script><!-- // --><![CDATA[
+		var smf_theme_url = "http://forum.arduino.cc/Themes/default";
+		var smf_default_theme_url = "http://forum.arduino.cc/Themes/default";
+		var smf_images_url = "http://forum.arduino.cc/Themes/default/images";
+		var smf_smileys_url = "http://forum.arduino.cc/Smileys";
+		var smf_scripturl = "http://forum.arduino.cc/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var smf_session_id = "8af64620b0fa0d7d862bdbb86bc4fa1e";
+		var smf_session_var = "cf7edb1f620";
+		var smf_member_id;
+		var ajax_notification_text = 'Loading...';
+		var help_popup_heading_text = 'A little lost? Let me explain:';
+	// ]]></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="http://forum.arduino.cc/Themes/default/scripts/smf_jquery_plugins.js?alph21"></script>
+	<script src="http://forum.arduino.cc/Themes/default/scripts/script.js?alph21"></script>
+	<script src="http://forum.arduino.cc/Themes/default/scripts/theme.js?alph21"></script>
+	<script src="http://forum.arduino.cc/Themes/default/scripts/editor.js?alph21"></script>
+	<script src="http://forum.arduino.cc/Themes/default/scripts/jquery.sceditor.js?alph21"></script>
+	<script src="http://forum.arduino.cc/Themes/default/scripts/jquery.sceditor.bbcode.js?alph21"></script>
+	<script src="http://forum.arduino.cc/Themes/default/scripts/jquery.sceditor.smf.js?alph21"></script>
+	<script src="http://forum.arduino.cc/Themes/default/scripts/topic.js?alph21"></script>
+	<script><!-- // --><![CDATA[
+		var smf_smileys_url = 'http://forum.arduino.cc/Smileys/arduino';
+		var bbc_quote_from = 'Quote from';
+		var bbc_quote = 'Quote';
+		var bbc_search_on = 'on';
+	// ]]></script>
+	<meta name="description" content="Larson Scanner, Anyone?">
+	<title>Larson Scanner, Anyone?</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#557EA0">
+	<link rel="canonical" href="http://forum.arduino.cc/index.php?topic=171567.0">
+	<link rel="help" href="http://forum.arduino.cc/index.php?action=help">
+	<link rel="contents" href="http://forum.arduino.cc/index.php">
+	<link rel="search" href="http://forum.arduino.cc/index.php?action=search">
+	<link rel="alternate" type="application/rss+xml" title="Arduino Forum - RSS" href="http://forum.arduino.cc/index.php?type=rss2;action=.xml">
+	<link rel="alternate" type="application/rss+xml" title="Arduino Forum - Atom" href="http://forum.arduino.cc/index.php?type=atom;action=.xml">
+	<link rel="index" href="http://forum.arduino.cc/index.php?board=6.0">
+</head>
+<body id="chrome" class="action_messageindex board_6"><link rel="stylesheet" href="http://arduino.cc/css/foundation2.css" type="text/css"><link rel="stylesheet" href="http://forum.arduino.cc/Themes/default/css/common-hacked.css" type="text/css"><link rel="stylesheet" href="http://arduino.cc/new_home/css/new_style.css" type="text/css"><link rel="stylesheet" href="http://arduino.cc/fonts/fonts.css" type="text/css"><link rel="stylesheet" href="http://arduino.cc/css/arduino-icons.css" type="text/css">
+<script>
+  var userAgent = (navigator.userAgent || navigator.vendor || window.opera).toLowerCase();
+  if(userAgent.indexOf('mac')>0){
+    $("head").append('<style type="text/css">@-moz-document url-prefix() {h1 a, h2 a, h3 a, h4 a, h5 a, h1 a:hover, h2 a:hover, th a, th a:hover, h3 a:hover, h4 a:hover, h5 a:hover, #wikitext h2 a:hover, #wikitext h3 a:hover, #wikitext h4 a:hover {padding-bottom: 0.5em!important;} #pageheader .search input{font-family: "TyponineSans Regular 18";} #pagefooter .monospace{margin-top: -4px;} #navWrapper ul.left &gt; li{margin-top: -2px; padding-bottom: 2px;}#navWrapper ul.right &gt; li{margin-top: -5px; padding-bottom: 5px;}#navWrapper ul.right &gt; li ul{margin-top: 4px;} .slider-container .fixed-caption p{padding:8px 0 14px 0}}</style>');
+  }
+</script>
+
+<!--[if IE]>
+<link rel='stylesheet' href='https://id.arduino.cc//css/ie-monospace.css' type='text/css' />
+<![endif]-->
+
+<div id="menuWings" class="fixed"></div>
+<div id="page" >
+
+
+
+
+<!--[if IE 8]>
+<div class="alert-box panel ie8alert">
+  <p><strong>Arduino.cc offers limited compatibility for Internet Explorer 8. Get a modern browser as Chrome, Firefox or Safari.</strong></p>
+  <a href="" class="close">&times;</a>
+</div>
+<![endif]-->
+
+<div id="pageheader">
+  <div class="row" class="contain-to-grid">
+    <div class="small-6 large-8 eight columns">
+      <div class="title"><a href="http://arduino.cc">Arduino</a></div>
+    </div>
+    <div class="small-6 large-4 four columns search">
+      <div class="row collapse">
+          <form method="GET" action="http://www.google.com/search">
+    <div class="small-12 twelve columns">
+      <i class="icon-search-2"></i>
+      <input type="hidden" name="ie" value="UTF-8">
+      <input type="hidden" name="oe" value="UTF-8">
+      <input type="text" name="q" size="25" maxlength="255" value="" placeholder="Search the Arduino Forum">
+      <input type="submit" name="btnG" VALUE="search">
+      <input type="hidden" name="domains" value="http://forum.arduino.cc">
+      <input type="hidden" name="sitesearch" value="http://forum.arduino.cc">
+    </div>
+  </form>      </div>
+    </div>
+  </div>
+
+  <!--[if gte IE 9]><!-->
+  <div class="navWrapper">
+  <div class="small-12">
+  <div id="navWrapper"  class="sticky">
+  <!--[endif]-->
+  <!--[if IE 8]>
+    <div id="navWrapper">
+  <![endif]-->
+    <nav class="top-bar"  data-options="is_hover:true" >
+      <ul class="title-area">
+        <li class="name"></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <ul class="left">
+          <li id="navLogo">
+            <a href="http://arduino.cc">
+              <img src="https://id.arduino.cc//img/logo_46.png" alt="userpicture" />
+            </a>
+          </li>
+          <li id="navHome"><a href="http://arduino.cc">Home</a></li>
+          <li><a href="http://store.arduino.cc">Buy</a></li>
+          <li><a href="http://arduino.cc/en/Main/Software">Download</a></li>
+          <li class="has-dropdown"><a href="http://arduino.cc/en/Main/Products">Products</a>
+            <ul class="dropdown">
+              <li><a href="http://arduino.cc/en/Main/Products">Arduino</a></li>
+              <li><a href="http://arduino.cc/en/ArduinoAtHeart/Products">AtHeart</a></li>
+              <li><a href="http://arduino.cc/en/ArduinoCertified/Products">Certified</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown"><a href="#">Learning</a>
+            <ul class="dropdown">
+              <li><a href="http://arduino.cc/en/Guide/HomePage">Getting started</a></li>
+              <li><a href="http://arduino.cc/en/Tutorial/HomePage">Examples</a></li>
+              <li><a href="http://arduino.cc/en/Reference/HomePage">Reference</a></li>
+              <li><a href="http://playground.arduino.cc">Playground</a></li>
+            </ul>
+          </li>
+          <li class="active"><a href="http://forum.arduino.cc">Forum</a></li>
+          <li class="has-dropdown"><a href="#">Support</a>
+            <ul class="dropdown">
+              <li><a href="http://arduino.cc/en/Main/FAQ">FAQ</a></li>
+              <li><a href="http://arduino.cc/en/ContactUs">Contact Us</a></li>
+            </ul>
+          </li>
+          <li><a href="http://blog.arduino.cc">Blog</a></li>
+        </ul>
+
+                <ul class="right">
+          <li><a href="https://id.arduino.cc/auth/login/?returnurl=http%3A%2F%2Fforum.arduino.cc%2Findex.php%3Ftopic%3D171567.0" class="cart">LOG IN</a></li>
+          <li><a href="https://id.arduino.cc/auth/signup" class="cart">SIGN UP</a></li>
+        </ul>
+              </section>
+    </nav>
+  </div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+				<div class="navigate_section" id="headerbread">
+          <div class="row" style="max-width: 960px!important;">
+          <div class="small-12">
+					<ul>
+          
+						<li>
+					<a href="http://forum.arduino.cc/index.php"><span>Arduino Forum</span></a>
+						</li>
+						<li>
+							<span class="dividers"> > </span>
+					<a href="http://forum.arduino.cc/index.php#c2"><span>Using Arduino</span></a>
+						</li>
+						<li>
+							<span class="dividers"> > </span>
+					<a href="http://forum.arduino.cc/index.php?board=6.0"><span>LEDs and Multiplexing</span></a>
+						</li>
+						<li class="last">
+							<span class="dividers"> > </span>
+					<a href="http://forum.arduino.cc/index.php?topic=171567.0"><span>Larson Scanner, Anyone?</span></a>
+						</li>
+					</ul>
+        </div>
+				</div>
+				</div>
+  <div class="row collapse">
+  <div class="small-12 columns">
+	<div id="wrapper">
+    <div id="upper_section">
+			<div id="inner_section">
+				<div id="main_menu">
+					<ul class="dropmenu" id="menu_nav">
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="content_section">
+			<div id="main_content_section">
+
+			<a id="msg1274983"></a>
+			<div class="pagesection top">
+				
+		<div class="buttonlist floatright">
+			
+				<a class="button-forum  button_strip_print" href="http://forum.arduino.cc/index.php?action=printpage;topic=171567.0" rel="nofollow">Print</a>
+		</div>
+				 <a href="#bot" class="topbottom floatleft">Go Down</a>
+				<div class="pagelinks floatleft">
+					<span class="pages">Pages: </span><span class="current_page">[1]</span> 
+				</div>
+			</div>
+			<div id="forumposts">
+				<div class="cat_bar">
+					<h3 class="catbg">
+						<span id="top_subject" class="topic-icon topic-icon-">Topic: Larson Scanner, Anyone?&nbsp;<span>(Read 3817 times)</span></span>
+						<span class="nextlinks floatright"><a href="http://forum.arduino.cc/index.php?topic=171567.0;prev_next=prev#new">previous topic</a> - <a href="http://forum.arduino.cc/index.php?topic=171567.0;prev_next=next#new">next topic</a></span>
+					</h3>
+				</div>
+				<form action="http://forum.arduino.cc/index.php?action=quickmod2;topic=171567.0" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0;" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('8af64620b0fa0d7d862bdbb86bc4fa1e', 'cf7edb1f620') : false">
+				<div class="windowbg">
+					<div class="post_wrapper">
+						<div class="poster">
+									<h4>
+								<span class="off" title="Offline"></span>
+								<a href="http://forum.arduino.cc/index.php?action=profile;u=55731" title="View the profile of Runaway Pancake" class="pm_icon">Runaway Pancake</a>
+									</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="http://forum.arduino.cc/index.php?action=profile;u=55731"><img class="avatar" src="http://static.arduino.cc/avatars/runaway_pancake.jpg" alt="avatar_runaway_pancake"></a>
+								</li>
+								<li class="icons"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"></li>
+								<li class="postgroup">Faraday Member</li>
+								<li class="postcount">Posts: 2,746</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=55731;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							<li class="blurb">Now, More Than Ever</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=55731;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="http://forum.arduino.cc/Themes/default/images/post/xx.png" alt="">
+								</div>
+								<div id="subject_1274983" class="subject_title"><a href="http://forum.arduino.cc/index.php?topic=171567.msg1274983#msg1274983" rel="nofollow">Larson Scanner, Anyone?</a></div>
+								<div class="page_number floatright">
+									 
+								</div>
+								<h5>
+									<a href="http://forum.arduino.cc/index.php?topic=171567.msg1274983#msg1274983" rel="nofollow" title=" - Larson Scanner, Anyone?" class="smalltext">Jun 12, 2013, 03:06 am</a>
+									<span class="smalltext modified" id="modified_1274983"><span class="lastedit">Last Edit</span>: Jun 14, 2013, 04:27 pm by Runaway Pancake&nbsp;<span class="lastedit">Reason</span>: 1</span>
+								</h5>
+								<div id="msg_1274983_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1274983">Maybe somebody has already done one this way, but I cannot find anything similar based on &#039;Search&#039;.<br /><br />First, there are a lot of LED back-and-forth, running lights jobs out there; many of them claiming to be &quot;Larson scanners&quot;. &nbsp;But a &quot;Larson scanner&quot; needs a trail of dimmer lights following the leading light. &nbsp;Whether he was the inventor as such I&#039;m not sure, but when Glen Larson did these for <em>Battlestar Galactica</em> (Cylons) and <em>Knight Rider</em> (KITT), he used light bulbs and the bulbs&#039; incandescence (their residual glow) made for the trailing effect. &nbsp;<br />LEDs go on/off rapidly, there&#039;s no continuing glow-down when they go off, no gradual fade out.<br /><br />So - how could that be done with LEDs? <br /><br /><em>Whip out your Arduino?</em> &nbsp;Good start, but still. <br /><em>Use the PWM pins?</em> &nbsp;There are only six.<br /><em>Charlieplex? </em> Stop already.<br /><em>Glom some &quot;library&quot;?</em> &nbsp;Not me.<br /><em>Off-board circuitry, something MAX-blah-blah?</em> &nbsp;Totally unnecessary.<br /><br />I worked it out with 10 positions.<br />I didn&#039;t use any PWM pins as such, no libraries, or any of that - just a stock Arduino with 10 LEDs and 10 resistors.<br />I used a &quot;lightbar&quot; because it was handy, made for a small footprint. &nbsp;T1 LEDs could fit within the confines of a small protoboard or a &quot;proto-shield&quot;.<br /><br /><img src="http://i270.photobucket.com/albums/jj118/new_clear_days/circuits/LarsonViaPortBDsch_zpsbb4d7bd1.jpg" alt="" class="bbc_img"><br /><br />The Arduino paradigm focusses on digitalWrites, but that would have made for a lot of flicker. &nbsp;The key is &quot;Port Manipulation&quot;, <span class="bbc_bold">poking</span> (as we used to say in C64 BASIC) the PORTB and PORTD registers, getting the data out in parallel. &nbsp;Actually, there are two such operations: the PORTB chunk and the PORTD chunk.<br /><br />I arranged an array of &quot;frames&quot; composed of 12 words each, bits 2 - 11 correspond to Digital pins.<br />In the following examples, &quot;Frame 1&quot; begins with the leading LED in bit 7 and in &quot;Frame 2&quot; it&#039;s in bit 8. <br /><div class="codeheader">Code: <a href="javascript:void(0);" onclick="return smfSelectText(this);" class="codeoperation">[Select]</a></div><code class="bbc_code"><br />// &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 11<br />// &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1098765432 &nbsp; &nbsp;<br />const word dimbits&#91;] = { 0b0000000011111100, // frame 1<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000011111000,<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000011110000, <br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000011100000, <br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000011000000, <br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000010000000, <br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000010000000, <br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000010000000, <br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000000000000,<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000000000000,<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000000000000,<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000000000000,<br />// &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1098765432 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000111111000, // frame 2<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000111110000,<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000111100000, <br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000111000000, <br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000110000000, <br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000100000000, <br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000100000000, <br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000100000000, <br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000000000000,<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000000000000,<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000000000000,<br /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0b0000000000000000,<br /></code><br />Long story short: the brighter an LED is supposed to be, the greater the number of times it shows up in a frame&#039;s words.<br /><br />In the sketch (PDE attached), each word gets read and split into two bytes that are written to their respective port registers. &nbsp;The sketch grabs each line at machine speed, it strafes. &nbsp;The variable times_out sets the speed, it&#039;s the number of times that all 12 lines in the &quot;frame&quot; get read and output (<em>put out</em>?).<br />In the demo, times_out = 7500 makes for a leisurely procession; 100 would make a solid bar while 100000 would be agonisingly slow.<br /><br />http://www.youtube.com/watch?v=o66bi_jEBoQ<br /><br />Sorry if it&#039;s a little blurry, but you should just get the idea, get it together and put it together, upload the sketch and enjoy.<br /><br />[So, &quot;noobs&quot;, et al., grab the sketch and place it in a file with the same name (LarsonViaPortBD). ]<br /><br />&gt; &gt; &gt; While tending to a request, I found a discontinuity in one of the dimbit&#91;] words and corrected that in LarsonViaProtBD_b.pde</div>
+							</div>
+							<div id="msg_1274983_footer" class="attachments">
+									<div class="floatleft">
+										<div class="attachments_bot">
+											<a href="http://forum.arduino.cc/index.php?action=dlattach;topic=171567.0;attach=46131"><img src="http://forum.arduino.cc/Themes/default/images/icons/clip.png" class="centericon" alt="*">&nbsp;LarsonViaPortBD.pde</a> 
+											<br>12.35 KB<br>downloaded 80 times
+										</div>
+									</div>
+									<div class="floatleft">
+										<div class="attachments_bot">
+											<a href="http://forum.arduino.cc/index.php?action=dlattach;topic=171567.0;attach=46355"><img src="http://forum.arduino.cc/Themes/default/images/icons/clip.png" class="centericon" alt="*">&nbsp;LarsonViaPortBD_b.pde</a> 
+											<br>12.35 KB<br>downloaded 94 times
+										</div>
+									</div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="signature" id="msg_1274983_signature">"Hello, I must be going..." <br>"You gotta fight -- for your right -- to party!"<br>Don't react - <span class="bbc_bold">Read</span>.<br>"Who is like unto the beast? who is able to make war with him?"</div>
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				<div class="windowbg2">
+					<a id="msg1275091"></a>
+					<div class="post_wrapper">
+						<div class="poster">
+									<h4>
+								<span class="off" title="Offline"></span>
+								<a href="http://forum.arduino.cc/index.php?action=profile;u=40955" title="View the profile of KirAsh4" class="pm_icon">KirAsh4</a>
+									</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="http://forum.arduino.cc/index.php?action=profile;u=40955"><img class="avatar" src="http://forum.arduino.cc/avatars/default.png" alt="avatar_KirAsh4"></a>
+								</li>
+								<li class="icons"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"></li>
+								<li class="postgroup">Edison Member</li>
+								<li class="postcount">Posts: 1,562</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=40955;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							<li class="blurb">Reviving dead brain cells with Arduinos.</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=40955;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="http://forum.arduino.cc/Themes/default/images/post/xx.png" alt="">
+								</div>
+								<div id="subject_1275091" class="subject_title"><a href="http://forum.arduino.cc/index.php?topic=171567.msg1275091#msg1275091" rel="nofollow">Re: Larson Scanner, Anyone?</a></div>
+								<div class="page_number floatright">
+									 #1 
+								</div>
+								<h5>
+									<a href="http://forum.arduino.cc/index.php?topic=171567.msg1275091#msg1275091" rel="nofollow" title="Reply #1 - Re: Larson Scanner, Anyone?" class="smalltext">Jun 12, 2013, 07:10 am</a>
+									<span class="smalltext modified" id="modified_1275091"></span>
+								</h5>
+								<div id="msg_1275091_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1275091">This is similar and has been &quot;out there&quot; for a long time now:<br /><br />http://blog.blinkenlight.net/experiments/basic-effects/knight-rider/</div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				<div class="windowbg">
+					<a id="msg1276267"></a>
+					<div class="post_wrapper">
+						<div class="poster">
+									<h4>
+								<span class="off" title="Offline"></span>
+								<a href="http://forum.arduino.cc/index.php?action=profile;u=55731" title="View the profile of Runaway Pancake" class="pm_icon">Runaway Pancake</a>
+									</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="http://forum.arduino.cc/index.php?action=profile;u=55731"><img class="avatar" src="http://static.arduino.cc/avatars/runaway_pancake.jpg" alt="avatar_runaway_pancake"></a>
+								</li>
+								<li class="icons"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"></li>
+								<li class="postgroup">Faraday Member</li>
+								<li class="postcount">Posts: 2,746</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=55731;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							<li class="blurb">Now, More Than Ever</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=55731;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="http://forum.arduino.cc/Themes/default/images/post/xx.png" alt="">
+								</div>
+								<div id="subject_1276267" class="subject_title"><a href="http://forum.arduino.cc/index.php?topic=171567.msg1276267#msg1276267" rel="nofollow">Re: Larson Scanner, Anyone?</a></div>
+								<div class="page_number floatright">
+									 #2 
+								</div>
+								<h5>
+									<a href="http://forum.arduino.cc/index.php?topic=171567.msg1276267#msg1276267" rel="nofollow" title="Reply #2 - Re: Larson Scanner, Anyone?" class="smalltext">Jun 13, 2013, 02:48 am</a>
+									<span class="smalltext modified" id="modified_1276267"></span>
+								</h5>
+								<div id="msg_1276267_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1276267"><br />Mine doesn&#039;t require anything extra, a &quot;proto-shield&quot; would be nice, maybe, but a solderless breadboard will make it happen.<br />My method of &quot;PWM&quot; is different and by composing a series of frames anyone should be able to come up with others patterns and effects fairly easily.<br />And I&#039;ve put it all out on the table, &quot;how to do it&quot; doesn&#039;t get more complete.<br /><br /><br /></div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="signature" id="msg_1276267_signature">"Hello, I must be going..." <br>"You gotta fight -- for your right -- to party!"<br>Don't react - <span class="bbc_bold">Read</span>.<br>"Who is like unto the beast? who is able to make war with him?"</div>
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				<div class="windowbg2">
+					<a id="msg1276544"></a>
+					<div class="post_wrapper">
+						<div class="poster">
+									<h4>
+								<span class="off" title="Offline"></span>
+								<a href="http://forum.arduino.cc/index.php?action=profile;u=51438" title="View the profile of fungus" class="pm_icon">fungus</a>
+									</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="http://forum.arduino.cc/index.php?action=profile;u=51438"><img class="avatar" src="http://forum.arduino.cc/avatars/default.png" alt="avatar_fungus"></a>
+								</li>
+								<li class="icons"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"></li>
+								<li class="postgroup">Faraday Member</li>
+								<li class="postcount">Posts: 5,869</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=51438;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=51438;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="http://forum.arduino.cc/Themes/default/images/post/xx.png" alt="">
+								</div>
+								<div id="subject_1276544" class="subject_title"><a href="http://forum.arduino.cc/index.php?topic=171567.msg1276544#msg1276544" rel="nofollow">Re: Larson Scanner, Anyone?</a></div>
+								<div class="page_number floatright">
+									 #3 
+								</div>
+								<h5>
+									<a href="http://forum.arduino.cc/index.php?topic=171567.msg1276544#msg1276544" rel="nofollow" title="Reply #3 - Re: Larson Scanner, Anyone?" class="smalltext">Jun 13, 2013, 11:12 am</a>
+									<span class="smalltext modified" id="modified_1276544"><span class="lastedit">Last Edit</span>: Jun 13, 2013, 11:17 am by fungus&nbsp;<span class="lastedit">Reason</span>: 1</span>
+								</h5>
+								<div id="msg_1276544_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1276544">PWM can be done in software...! <img src="http://forum.arduino.cc/Smileys/arduino/smiley.gif" alt="&#58;&#41;" title="Smiley" class="smiley"><br /></div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="signature" id="msg_1276544_signature">No, I don&#39;t answer questions sent in private messages (but I do accept thank-you notes...)</div>
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				<div class="windowbg">
+					<a id="msg1276704"></a>
+					<div class="post_wrapper">
+						<div class="poster">
+									<h4>
+								<span class="off" title="Offline"></span>
+								<a href="http://forum.arduino.cc/index.php?action=profile;u=11649" title="View the profile of Marvin Martian" class="pm_icon">Marvin Martian</a>
+									</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="http://forum.arduino.cc/index.php?action=profile;u=11649"><img class="avatar" src="http://static.arduino.cc/avatars/MarvinMartian.jpg" alt="avatar_MarvinMartian"></a>
+								</li>
+								<li class="icons"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"></li>
+								<li class="postgroup">Full Member</li>
+								<li class="postcount">Posts: 119</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=11649;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							<li class="blurb">Where's the Kaboom?</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=11649;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="http://forum.arduino.cc/Themes/default/images/post/xx.png" alt="">
+								</div>
+								<div id="subject_1276704" class="subject_title"><a href="http://forum.arduino.cc/index.php?topic=171567.msg1276704#msg1276704" rel="nofollow">Re: Larson Scanner, Anyone?</a></div>
+								<div class="page_number floatright">
+									 #4 
+								</div>
+								<h5>
+									<a href="http://forum.arduino.cc/index.php?topic=171567.msg1276704#msg1276704" rel="nofollow" title="Reply #4 - Re: Larson Scanner, Anyone?" class="smalltext">Jun 13, 2013, 02:09 pm</a>
+									<span class="smalltext modified" id="modified_1276704"></span>
+								</h5>
+								<div id="msg_1276704_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1276704">Check out the SoftPWM library - not only will it allow you to PWM all the pins, but has built in support for fade up and fade down of values over time, which is exactly what you need for such an application</div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				<div class="windowbg2">
+					<a id="msg1276769"></a>
+					<div class="post_wrapper">
+						<div class="poster">
+									<h4>
+								<span class="off" title="Offline"></span>
+								<a href="http://forum.arduino.cc/index.php?action=profile;u=55731" title="View the profile of Runaway Pancake" class="pm_icon">Runaway Pancake</a>
+									</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="http://forum.arduino.cc/index.php?action=profile;u=55731"><img class="avatar" src="http://static.arduino.cc/avatars/runaway_pancake.jpg" alt="avatar_runaway_pancake"></a>
+								</li>
+								<li class="icons"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"></li>
+								<li class="postgroup">Faraday Member</li>
+								<li class="postcount">Posts: 2,746</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=55731;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							<li class="blurb">Now, More Than Ever</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=55731;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="http://forum.arduino.cc/Themes/default/images/post/xx.png" alt="">
+								</div>
+								<div id="subject_1276769" class="subject_title"><a href="http://forum.arduino.cc/index.php?topic=171567.msg1276769#msg1276769" rel="nofollow">Re: Larson Scanner, Anyone?</a></div>
+								<div class="page_number floatright">
+									 #5 
+								</div>
+								<h5>
+									<a href="http://forum.arduino.cc/index.php?topic=171567.msg1276769#msg1276769" rel="nofollow" title="Reply #5 - Re: Larson Scanner, Anyone?" class="smalltext">Jun 13, 2013, 02:53 pm</a>
+									<span class="smalltext modified" id="modified_1276769"></span>
+								</h5>
+								<div id="msg_1276769_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1276769"><br />&quot;SoftPWM library&quot;... not required.<br /><br />I came up with this because it&#039;s a <em>n00b-faq</em>.<br /><br />Go with it or don&#039;t.</div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="signature" id="msg_1276769_signature">"Hello, I must be going..." <br>"You gotta fight -- for your right -- to party!"<br>Don't react - <span class="bbc_bold">Read</span>.<br>"Who is like unto the beast? who is able to make war with him?"</div>
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				<div class="windowbg">
+					<a id="msg1277669"></a>
+					<div class="post_wrapper">
+						<div class="poster">
+									<h4>
+								<span class="off" title="Offline"></span>
+								<a href="http://forum.arduino.cc/index.php?action=profile;u=130266" title="View the profile of Pedro147" class="pm_icon">Pedro147</a>
+									</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="http://forum.arduino.cc/index.php?action=profile;u=130266"><img class="avatar" src="http://static.arduino.cc/avatars/Pedro147.jpg" alt="avatar_Pedro147"></a>
+								</li>
+								<li class="icons"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"></li>
+								<li class="postgroup">God Member</li>
+								<li class="postcount">Posts: 585</li>
+								<li class="profile">
+									<ol class="profile_icons">
+										<li><a href="http://www.pedroduino.com" title="" target="_blank" class="new_win"><span class="generic_icons www centericon" title=""></span></a></li>
+									</ol>
+								</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=130266;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							<li class="blurb">Hardcore Arduino </li>
+							<li class="link-profile"><a href="http://www.pedroduino.com"></a></li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=130266;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="http://forum.arduino.cc/Themes/default/images/post/xx.png" alt="">
+								</div>
+								<div id="subject_1277669" class="subject_title"><a href="http://forum.arduino.cc/index.php?topic=171567.msg1277669#msg1277669" rel="nofollow">Re: Larson Scanner, Anyone?</a></div>
+								<div class="page_number floatright">
+									 #6 
+								</div>
+								<h5>
+									<a href="http://forum.arduino.cc/index.php?topic=171567.msg1277669#msg1277669" rel="nofollow" title="Reply #6 - Re: Larson Scanner, Anyone?" class="smalltext">Jun 14, 2013, 04:56 am</a>
+									<span class="smalltext modified" id="modified_1277669"></span>
+								</h5>
+								<div id="msg_1277669_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1277669">Hi &quot;Dr Pancake&quot; <br /> <div class="quoteheader">Quote</div><blockquote class="bbc_standard_quote">Actually, it&#039;s Doctor Pancake,<br />But anyway...&nbsp; (:</blockquote><div class="quotefooter"></div><br />I have played around a little with direct port maniplulation and also Larson scanner code that I found using hardware PWM but found this restricting due to there only being six PWM pins on the Arduino Uno. I have also used the Blinkenlight code which I did manage to modify from his ten LED's to the eight that I normally use for these types of code.&nbsp; would like to try your code but with only eight LED's and I must admit that despite your thorough explanation I still do no quite get it. Would you mind showing me how to adapt it to using only eight LED's and I will try and work out how it works. Thanks if you can help Pedro.<br /></div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="signature" id="msg_1277669_signature">http://www.pedroduino.com</div>
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				<div class="windowbg2">
+					<a id="msg1278206"></a>
+					<div class="post_wrapper">
+						<div class="poster">
+									<h4>
+								<span class="off" title="Offline"></span>
+								<a href="http://forum.arduino.cc/index.php?action=profile;u=55731" title="View the profile of Runaway Pancake" class="pm_icon">Runaway Pancake</a>
+									</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="http://forum.arduino.cc/index.php?action=profile;u=55731"><img class="avatar" src="http://static.arduino.cc/avatars/runaway_pancake.jpg" alt="avatar_runaway_pancake"></a>
+								</li>
+								<li class="icons"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"></li>
+								<li class="postgroup">Faraday Member</li>
+								<li class="postcount">Posts: 2,746</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=55731;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							<li class="blurb">Now, More Than Ever</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=55731;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="http://forum.arduino.cc/Themes/default/images/post/xx.png" alt="">
+								</div>
+								<div id="subject_1278206" class="subject_title"><a href="http://forum.arduino.cc/index.php?topic=171567.msg1278206#msg1278206" rel="nofollow">Re: Larson Scanner, Anyone?</a></div>
+								<div class="page_number floatright">
+									 #7 
+								</div>
+								<h5>
+									<a href="http://forum.arduino.cc/index.php?topic=171567.msg1278206#msg1278206" rel="nofollow" title="Reply #7 - Re: Larson Scanner, Anyone?" class="smalltext">Jun 14, 2013, 04:31 pm</a>
+									<span class="smalltext modified" id="modified_1278206"></span>
+								</h5>
+								<div id="msg_1278206_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1278206">OK, I&#039;m easy - see attached PDE.<br /><br />I noticed a discontinuity (error) in one of the words in the dimbits[ ] array.<br />[Now, The Universe is back in balance and many lives have been spared.]<br /><br />Its length is four segments, use digital outputs 2 - 9.</div>
+							</div>
+							<div id="msg_1278206_footer" class="attachments">
+									<div class="floatleft">
+										<div class="attachments_bot">
+											<a href="http://forum.arduino.cc/index.php?action=dlattach;topic=171567.0;attach=46356"><img src="http://forum.arduino.cc/Themes/default/images/icons/clip.png" class="centericon" alt="*">&nbsp;Larson_8_PortBD.pde</a> 
+											<br>10.04 KB<br>downloaded 55 times
+										</div>
+									</div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="signature" id="msg_1278206_signature">"Hello, I must be going..." <br>"You gotta fight -- for your right -- to party!"<br>Don't react - <span class="bbc_bold">Read</span>.<br>"Who is like unto the beast? who is able to make war with him?"</div>
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				<div class="windowbg">
+					<a id="msg1278366"></a>
+					<div class="post_wrapper">
+						<div class="poster">
+									<h4>
+								<span class="off" title="Offline"></span>
+								<a href="http://forum.arduino.cc/index.php?action=profile;u=55731" title="View the profile of Runaway Pancake" class="pm_icon">Runaway Pancake</a>
+									</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="http://forum.arduino.cc/index.php?action=profile;u=55731"><img class="avatar" src="http://static.arduino.cc/avatars/runaway_pancake.jpg" alt="avatar_runaway_pancake"></a>
+								</li>
+								<li class="icons"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"></li>
+								<li class="postgroup">Faraday Member</li>
+								<li class="postcount">Posts: 2,746</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=55731;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							<li class="blurb">Now, More Than Ever</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=55731;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="http://forum.arduino.cc/Themes/default/images/post/xx.png" alt="">
+								</div>
+								<div id="subject_1278366" class="subject_title"><a href="http://forum.arduino.cc/index.php?topic=171567.msg1278366#msg1278366" rel="nofollow">Re: Larson Scanner, Anyone?</a></div>
+								<div class="page_number floatright">
+									 #8 
+								</div>
+								<h5>
+									<a href="http://forum.arduino.cc/index.php?topic=171567.msg1278366#msg1278366" rel="nofollow" title="Reply #8 - Re: Larson Scanner, Anyone?" class="smalltext">Jun 14, 2013, 06:39 pm</a>
+									<span class="smalltext modified" id="modified_1278366"></span>
+								</h5>
+								<div id="msg_1278366_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1278366">And, to shed more light on the subject, the attached sketch has two LEDs bouncing back and forth opposite each other, one is dim and one is bright, 8 positions/LEDs.</div>
+							</div>
+							<div id="msg_1278366_footer" class="attachments">
+									<div class="floatleft">
+										<div class="attachments_bot">
+											<a href="http://forum.arduino.cc/index.php?action=dlattach;topic=171567.0;attach=46365"><img src="http://forum.arduino.cc/Themes/default/images/icons/clip.png" class="centericon" alt="*">&nbsp;brtdimbounce.pde</a> 
+											<br>9.59 KB<br>downloaded 40 times
+										</div>
+									</div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="signature" id="msg_1278366_signature">"Hello, I must be going..." <br>"You gotta fight -- for your right -- to party!"<br>Don't react - <span class="bbc_bold">Read</span>.<br>"Who is like unto the beast? who is able to make war with him?"</div>
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				<div class="windowbg2">
+					<a id="msg1278432"></a>
+					<div class="post_wrapper">
+						<div class="poster">
+									<h4>
+								<span class="off" title="Offline"></span>
+								<a href="http://forum.arduino.cc/index.php?action=profile;u=35906" title="View the profile of Jack Christensen" class="pm_icon">Jack Christensen</a>
+									</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="http://forum.arduino.cc/index.php?action=profile;u=35906"><img class="avatar" src="http://static.arduino.cc/avatars/JChristensen.jpg" alt="avatar_JChristensen"></a>
+								</li>
+								<li class="icons"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"></li>
+								<li class="postgroup">Faraday Member</li>
+								<li class="postcount">Posts: 4,173</li>
+								<li class="profile">
+									<ol class="profile_icons">
+										<li><a href="http://adventuresinarduinoland.blogspot.com/" title="Adventures in Arduinoland" target="_blank" class="new_win"><span class="generic_icons www centericon" title="Adventures in Arduinoland"></span></a></li>
+									</ol>
+								</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=35906;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							<li class="blurb">CODE is a mass noun and should not be used in the plural or with an indefinite article.</li>
+							<li class="link-profile"><a href="http://adventuresinarduinoland.blogspot.com/">Adventures in Arduinoland</a></li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=35906;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="http://forum.arduino.cc/Themes/default/images/post/xx.png" alt="">
+								</div>
+								<div id="subject_1278432" class="subject_title"><a href="http://forum.arduino.cc/index.php?topic=171567.msg1278432#msg1278432" rel="nofollow">Re: Larson Scanner, Anyone?</a></div>
+								<div class="page_number floatright">
+									 #9 
+								</div>
+								<h5>
+									<a href="http://forum.arduino.cc/index.php?topic=171567.msg1278432#msg1278432" rel="nofollow" title="Reply #9 - Re: Larson Scanner, Anyone?" class="smalltext">Jun 14, 2013, 07:52 pm</a>
+									<span class="smalltext modified" id="modified_1278432"></span>
+								</h5>
+								<div id="msg_1278432_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1278432">I have one of these, works well, nice kit!<br />http://shop.evilmadscientist.com/productsmenu/tinykitlist/152-scanner</div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="signature" id="msg_1278432_signature"><span style="font-size: 8pt;" class="bbc_size">MCP79411/12 RTC ... &quot;One Million Ohms&quot; ATtiny kit ... available at http://www.tindie.com/stores/JChristensen/</span></div>
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				<div class="windowbg">
+					<a id="msg1278696"></a>
+					<div class="post_wrapper">
+						<div class="poster">
+									<h4>
+								<span class="off" title="Offline"></span>
+								<a href="http://forum.arduino.cc/index.php?action=profile;u=130266" title="View the profile of Pedro147" class="pm_icon">Pedro147</a>
+									</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="http://forum.arduino.cc/index.php?action=profile;u=130266"><img class="avatar" src="http://static.arduino.cc/avatars/Pedro147.jpg" alt="avatar_Pedro147"></a>
+								</li>
+								<li class="icons"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"></li>
+								<li class="postgroup">God Member</li>
+								<li class="postcount">Posts: 585</li>
+								<li class="profile">
+									<ol class="profile_icons">
+										<li><a href="http://www.pedroduino.com" title="" target="_blank" class="new_win"><span class="generic_icons www centericon" title=""></span></a></li>
+									</ol>
+								</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=130266;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							<li class="blurb">Hardcore Arduino </li>
+							<li class="link-profile"><a href="http://www.pedroduino.com"></a></li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=130266;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="http://forum.arduino.cc/Themes/default/images/post/xx.png" alt="">
+								</div>
+								<div id="subject_1278696" class="subject_title"><a href="http://forum.arduino.cc/index.php?topic=171567.msg1278696#msg1278696" rel="nofollow">Re: Larson Scanner, Anyone?</a></div>
+								<div class="page_number floatright">
+									 #10 
+								</div>
+								<h5>
+									<a href="http://forum.arduino.cc/index.php?topic=171567.msg1278696#msg1278696" rel="nofollow" title="Reply #10 - Re: Larson Scanner, Anyone?" class="smalltext">Jun 14, 2013, 11:57 pm</a>
+									<span class="smalltext modified" id="modified_1278696"><span class="lastedit">Last Edit</span>: Jun 15, 2013, 12:21 am by Pedro147&nbsp;<span class="lastedit">Reason</span>: 1</span>
+								</h5>
+								<div id="msg_1278696_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1278696">Thanks for that Runaway,<br /><br />and glad to hear that you have restored cosmic harmony, may the force be with you &nbsp;<img src="http://forum.arduino.cc/Smileys/arduino/cool.gif" alt="8&#41;" title="Cool" class="smiley"> I can sleep easy tonight<br /><br />Pedro.<br /><br />Edit - just connected it up. Nice thank you.</div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="signature" id="msg_1278696_signature">http://www.pedroduino.com</div>
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				<div class="windowbg2">
+					<a id="msg1278883"></a>
+					<div class="post_wrapper">
+						<div class="poster">
+									<h4>
+								<span class="off" title="Offline"></span>
+								<a href="http://forum.arduino.cc/index.php?action=profile;u=55731" title="View the profile of Runaway Pancake" class="pm_icon">Runaway Pancake</a>
+									</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="http://forum.arduino.cc/index.php?action=profile;u=55731"><img class="avatar" src="http://static.arduino.cc/avatars/runaway_pancake.jpg" alt="avatar_runaway_pancake"></a>
+								</li>
+								<li class="icons"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"></li>
+								<li class="postgroup">Faraday Member</li>
+								<li class="postcount">Posts: 2,746</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=55731;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							<li class="blurb">Now, More Than Ever</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=55731;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="http://forum.arduino.cc/Themes/default/images/post/xx.png" alt="">
+								</div>
+								<div id="subject_1278883" class="subject_title"><a href="http://forum.arduino.cc/index.php?topic=171567.msg1278883#msg1278883" rel="nofollow">Re: Larson Scanner, Anyone?</a></div>
+								<div class="page_number floatright">
+									 #11 
+								</div>
+								<h5>
+									<a href="http://forum.arduino.cc/index.php?topic=171567.msg1278883#msg1278883" rel="nofollow" title="Reply #11 - Re: Larson Scanner, Anyone?" class="smalltext">Jun 15, 2013, 05:22 am</a>
+									<span class="smalltext modified" id="modified_1278883"></span>
+								</h5>
+								<div id="msg_1278883_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1278883">Here are two more examples:<br /><br />outward_8.pde has two leaders starting from the innermost and proceeding outward (no bounce)<br /><br />static_fading_8.pde is just a strip of fading (frozen)</div>
+							</div>
+							<div id="msg_1278883_footer" class="attachments">
+									<div class="floatleft">
+										<div class="attachments_bot">
+											<a href="http://forum.arduino.cc/index.php?action=dlattach;topic=171567.0;attach=46395"><img src="http://forum.arduino.cc/Themes/default/images/icons/clip.png" class="centericon" alt="*">&nbsp;outward_8.pde</a> 
+											<br>6.92 KB<br>downloaded 44 times
+										</div>
+									</div>
+									<div class="floatleft">
+										<div class="attachments_bot">
+											<a href="http://forum.arduino.cc/index.php?action=dlattach;topic=171567.0;attach=46396"><img src="http://forum.arduino.cc/Themes/default/images/icons/clip.png" class="centericon" alt="*">&nbsp;static_fading_8.pde</a> 
+											<br>1.92 KB<br>downloaded 45 times
+										</div>
+									</div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="signature" id="msg_1278883_signature">"Hello, I must be going..." <br>"You gotta fight -- for your right -- to party!"<br>Don't react - <span class="bbc_bold">Read</span>.<br>"Who is like unto the beast? who is able to make war with him?"</div>
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				<div class="windowbg">
+					<a id="msg1279001"></a>
+					<div class="post_wrapper">
+						<div class="poster">
+									<h4>
+								<span class="off" title="Offline"></span>
+								<a href="http://forum.arduino.cc/index.php?action=profile;u=130266" title="View the profile of Pedro147" class="pm_icon">Pedro147</a>
+									</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="http://forum.arduino.cc/index.php?action=profile;u=130266"><img class="avatar" src="http://static.arduino.cc/avatars/Pedro147.jpg" alt="avatar_Pedro147"></a>
+								</li>
+								<li class="icons"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"></li>
+								<li class="postgroup">God Member</li>
+								<li class="postcount">Posts: 585</li>
+								<li class="profile">
+									<ol class="profile_icons">
+										<li><a href="http://www.pedroduino.com" title="" target="_blank" class="new_win"><span class="generic_icons www centericon" title=""></span></a></li>
+									</ol>
+								</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=130266;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							<li class="blurb">Hardcore Arduino </li>
+							<li class="link-profile"><a href="http://www.pedroduino.com"></a></li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=130266;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="http://forum.arduino.cc/Themes/default/images/post/xx.png" alt="">
+								</div>
+								<div id="subject_1279001" class="subject_title"><a href="http://forum.arduino.cc/index.php?topic=171567.msg1279001#msg1279001" rel="nofollow">Re: Larson Scanner, Anyone?</a></div>
+								<div class="page_number floatright">
+									 #12 
+								</div>
+								<h5>
+									<a href="http://forum.arduino.cc/index.php?topic=171567.msg1279001#msg1279001" rel="nofollow" title="Reply #12 - Re: Larson Scanner, Anyone?" class="smalltext">Jun 15, 2013, 09:45 am</a>
+									<span class="smalltext modified" id="modified_1279001"></span>
+								</h5>
+								<div id="msg_1279001_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1279001">A clearer video of Larson Scanner, Anyone in action&nbsp; <img src="http://forum.arduino.cc/Smileys/arduino/cool.gif" alt="8&#41;" title="Cool" class="smiley"><br /><br />http://www.youtube.com/watch?v=VI8g4giMCYY</div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="signature" id="msg_1279001_signature">http://www.pedroduino.com</div>
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				<div class="windowbg2">
+					<a id="msg1445387"></a>
+					<div class="post_wrapper">
+						<div class="poster">
+									<h4>
+								<span class="off" title="Offline"></span>
+								<a href="http://forum.arduino.cc/index.php?action=profile;u=14160" title="View the profile of Sourcery" class="pm_icon">Sourcery</a>
+									</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="http://forum.arduino.cc/index.php?action=profile;u=14160"><img class="avatar" src="http://forum.arduino.cc/avatars/default.png" alt="avatar_sourcery"></a>
+								</li>
+								<li class="icons"><img src="http://forum.arduino.cc/Themes/default/images/membericons/star.gif" alt="*"></li>
+								<li class="postgroup">Newbie</li>
+								<li class="postcount">Posts: 34</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=14160;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							<li class="blurb">Arduino rocks</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=14160;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="http://forum.arduino.cc/Themes/default/images/post/xx.png" alt="">
+								</div>
+								<div id="subject_1445387" class="subject_title"><a href="http://forum.arduino.cc/index.php?topic=171567.msg1445387#msg1445387" rel="nofollow">Re: Larson Scanner, Anyone?</a></div>
+								<div class="page_number floatright">
+									 #13 
+								</div>
+								<h5>
+									<a href="http://forum.arduino.cc/index.php?topic=171567.msg1445387#msg1445387" rel="nofollow" title="Reply #13 - Re: Larson Scanner, Anyone?" class="smalltext">Oct 28, 2013, 09:48 am</a>
+									<span class="smalltext modified" id="modified_1445387"><span class="lastedit">Last Edit</span>: Aug 12, 2014, 01:10 pm by Sourcery&nbsp;<span class="lastedit">Reason</span>: 1</span>
+								</h5>
+								<div id="msg_1445387_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1445387">Here is my years Halloween project <img src="http://forum.arduino.cc/Smileys/arduino/smiley.gif" alt="&#58;&#41;" title="Smiley" class="smiley"> Cylonscanner with Runaway Pancakes code above... THANKS, it worked awesome and super easy to implement... <br /><br />I Did it as a standalone board with just 10 LEDS, an ATMega328 and a Oscillator Resonator. Yeah I know I cheated and skipped the resistors... &nbsp;]<img src="http://forum.arduino.cc/Smileys/arduino/smiley.gif" alt="&#58;&#41;" title="Smiley" class="smiley"> But it was perfect for fitting in a Jack-o-lantern... without getting pumpkin-goo on my Arduino board <img src="http://forum.arduino.cc/Smileys/arduino/smiley.gif" alt="&#58;&#41;" title="Smiley" class="smiley"><br /><br /><a href="http://www.youtube.com/watch?v=FDa46I3XnQk" class="bbc_link" target="_blank">http://www.youtube.com/watch?v=FDa46I3XnQk</a></div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				<div class="windowbg">
+					<a id="msg1446635"></a>
+					<div class="post_wrapper">
+						<div class="poster">
+									<h4>
+								<span class="off" title="Offline"></span>
+								<a href="http://forum.arduino.cc/index.php?action=profile;u=55731" title="View the profile of Runaway Pancake" class="pm_icon">Runaway Pancake</a>
+									</h4>
+							<ul class="user_info">
+								<li class="avatar">
+									<a href="http://forum.arduino.cc/index.php?action=profile;u=55731"><img class="avatar" src="http://static.arduino.cc/avatars/runaway_pancake.jpg" alt="avatar_runaway_pancake"></a>
+								</li>
+								<li class="icons"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"><img src="http://forum.arduino.cc/Themes/default/images/membericons/stargold.gif" alt="*"></li>
+								<li class="postgroup">Faraday Member</li>
+								<li class="postcount">Posts: 2,746</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=55731;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							<li class="blurb">Now, More Than Ever</li>
+									<li class="custom karma_labels">
+									<a href="http://forum.arduino.cc/index.php?action=karma;sa=applaud;uid=55731;cf7edb1f620=8af64620b0fa0d7d862bdbb86bc4fa1e">[add Karma]</a></li>
+							</ul>
+						</div>
+						<div class="postarea">
+							<div class="keyinfo">
+								<div class="messageicon" style="position: absolute; z-index: -1;">
+									<img src="http://forum.arduino.cc/Themes/default/images/post/xx.png" alt="">
+								</div>
+								<div id="subject_1446635" class="subject_title"><a href="http://forum.arduino.cc/index.php?topic=171567.msg1446635#msg1446635" rel="nofollow">Re: Larson Scanner, Anyone?</a></div>
+								<div class="page_number floatright">
+									 #14 
+								</div>
+								<h5>
+									<a href="http://forum.arduino.cc/index.php?topic=171567.msg1446635#msg1446635" rel="nofollow" title="Reply #14 - Re: Larson Scanner, Anyone?" class="smalltext">Oct 29, 2013, 02:49 am</a>
+									<span class="smalltext modified" id="modified_1446635"></span>
+								</h5>
+								<div id="msg_1446635_quick_mod"></div>
+							</div>
+							<div class="post">
+								<div class="inner" id="msg_1446635">The resistors were just a bridge too far then?<br />[The old <em>LEDs sans resistors</em> jack-o&#039;-lantern exigency.&nbsp; &nbsp;<img src="http://forum.arduino.cc/Smileys/arduino/smiley-mr-green.png" alt="&#58;smiley-mr-green&#58;" title="smiley-mr-green" class="smiley">&nbsp; ]<br /><br />&quot;Happy Pancapkes&quot;?&nbsp; Who&#039;s that?<br />Like the man said about military fame, it&#039;s: &quot;to be killed on the field of battle and have your name misspelled in the newspapers&quot;<br /><br />Happy Samhain, kids!</div>
+							</div>
+							<div class="under_message">
+							</div>
+						</div>
+						<div class="moderatorbar">
+							<div class="signature" id="msg_1446635_signature">"Hello, I must be going..." <br>"You gotta fight -- for your right -- to party!"<br>Don't react - <span class="bbc_bold">Read</span>.<br>"Who is like unto the beast? who is able to make war with him?"</div>
+						</div>
+					</div>
+				</div>
+				<hr class="post_separator">
+				</form>
+			</div>
+			<div class="pagesection">
+				
+		<div class="buttonlist floatright">
+			
+				<a class="button-forum  button_strip_print" href="http://forum.arduino.cc/index.php?action=printpage;topic=171567.0" rel="nofollow">Print</a>
+		</div>
+				 <a href="#main_content_section" class="topbottom floatleft" id="bot">Go Up</a>
+				<div class="pagelinks floatleft">
+					<span class="pages">Pages: </span><span class="current_page">[1]</span> 
+				</div>
+			</div>
+			<div id="moderationbuttons">
+				
+			</div>
+			<div id="display_jump_to">&nbsp;</div>
+			<br class="clear">
+				<script><!-- // --><![CDATA[
+					var oQuickReply = new QuickReply({
+						bDefaultCollapsed: false,
+						iTopicId: 171567,
+						iStart: 0,
+						sScriptUrl: smf_scripturl,
+						sImagesUrl: smf_images_url,
+						sContainerId: "quickReplyOptions",
+						sImageId: "quickReplyExpand",
+						sClassCollapsed: "toggle_up",
+						sClassExpanded: "toggle_down",
+						bIsFull: true
+					});
+					if ('XMLHttpRequest' in window)
+					{
+						var oQuickModify = new QuickModify({
+							sScriptUrl: smf_scripturl,
+							sClassName: 'quick_edit',
+							bShowModify: true,
+							iTopicId: 171567,
+							sTemplateBodyEdit: '\n\t\t\t\t\t\t\t\t<div id="quick_edit_body_container">\n\t\t\t\t\t\t\t\t\t<div id="error_box" class="error"><' + '/div>\n\t\t\t\t\t\t\t\t\t<textarea class="editor" name="message" rows="12" style="width: 100%; margin-bottom: 10px;" tabindex="1">%body%<' + '/textarea><br>\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="cf7edb1f620" value="8af64620b0fa0d7d862bdbb86bc4fa1e">\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="topic" value="171567">\n\t\t\t\t\t\t\t\t\t<input type="hidden" name="msg" value="%msg_id%">\n\t\t\t\t\t\t\t\t\t<div class="righttext">\n\t\t\t\t\t\t\t\t\t\t<input type="submit" name="post" value="Save" tabindex="2" onclick="return oQuickModify.modifySave(\'8af64620b0fa0d7d862bdbb86bc4fa1e\', \'cf7edb1f620\');" accesskey="s" class="button_submit">&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" tabindex="3" onclick="return oQuickModify.modifyCancel();" class="button_submit">\n\t\t\t\t\t\t\t\t\t<' + '/div>\n\t\t\t\t\t\t\t\t<' + '/div>',
+							sTemplateSubjectEdit: '<input type="text" name="subject" value="%subject%" size="80" maxlength="80" tabindex="4" class="input_text">',
+							sTemplateBodyNormal: '%body%',
+							sTemplateSubjectNormal: '<a hr'+'ef="' + smf_scripturl + '?topic=171567.msg%msg_id%#msg%msg_id%" rel="nofollow">%subject%<' + '/a>',
+							sTemplateTopSubject: 'Topic: %subject% &nbsp;(Read 3817 times)',
+							sTemplateReasonEdit: '<input type="text" name="modify_reason" value="%modify_reason%" size="80" maxlength="80" tabindex="5" class="input_text">)',
+							sTemplateReasonNormal: '%modify_text',
+							sErrorBorderStyle: '1px solid red'
+						});
+
+						aJumpTo[aJumpTo.length] = new JumpTo({
+							sContainerId: "display_jump_to",
+							sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+							iCurBoardId: 6,
+							iCurBoardChildLevel: 0,
+							sCurBoardName: "LEDs and Multiplexing",
+							sBoardChildLevelIndicator: "==",
+							sBoardPrefix: "=> ",
+							sCatSeparator: "-----------------------------",
+							sCatPrefix: "",
+							sGoButtonLabel: "Go"
+						});
+
+						aIconLists[aIconLists.length] = new IconList({
+							sBackReference: "aIconLists[" + aIconLists.length + "]",
+							sIconIdPrefix: "msg_icon_",
+							sScriptUrl: smf_scripturl,
+							bShowModify: true,
+							iBoardId: 6,
+							iTopicId: 171567,
+							sSessionId: smf_session_id,
+							sSessionVar: smf_session_var,
+							sLabelIconList: "Message icon",
+							sBoxBackground: "transparent",
+							sBoxBackgroundHover: "#ffffff",
+							iBoxBorderWidthHover: 1,
+							sBoxBorderColorHover: "#adadad" ,
+							sContainerBackground: "#ffffff",
+							sContainerBorder: "1px solid #adadad",
+							sItemBorder: "1px solid #ffffff",
+							sItemBorderHover: "1px dotted gray",
+							sItemBackground: "transparent",
+							sItemBackgroundHover: "#e0e0f0"
+						});
+					}
+				// ]]></script>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+           <br /><style>.pagefooter a { color: white !important; }</style>
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22581631-3']);
+		_gaq.push(['_setDomainName', 'arduino.cc']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script><link rel="stylesheet" type="text/css" href="/Themes/Arduino2x-Theme/css/newsletter.css">
+<div id="newsletterModal" class="reveal-modal small">
+  <form action="http://arduino.cc/subscribe.php" method="post" name="sendy-subscribe-form" id="sendy-subscribe-form" class="form-popup">
+    <div class="modalHeader">
+      <h3 style="line-height: 1.8rem;" class="modal-header-alt">This link has expired. <br>Please re-subscribe to our Newsletters.</h3>
+      <h3 class="modal-header-main">Subscribe to our Newsletters</h3>
+    </div>
+    <div class="modalBody" id="newsletterModalBody">
+        <div id="newsletterEmailField" class="row" style="padding-left: 0">
+          <div class="large-2 columns">
+            <label for="email" class="newsletter-form-label inline">Email</label>
+          </div>
+          <div class="large-10 columns" style="padding-left: 0">
+            <input placeholder="Enter your email address" type="email" name="email" class="subscribe-form-input" />
+            <p id="emailMissing" class="newsletterPopupError">Please enter a valid email to subscribe</p>
+          </div>
+        </div>
+        <div style="margin-left:20px">
+          <div style="margin-bottom:0.3em">
+            <input style="display:none" type="checkbox" checked name="list[]" value="arduino_newsletter_id" id="worldwide" class="newsletter-form-checkbox" />
+            <label for="worldwide"></label>
+            <div style="display:inline-block" class="newsletter-form-label">Arduino Newsletter</div>
+          </div>
+          <div>
+            <input style="display:none" type="checkbox" checked name="list[]" value="arduino_store_newsletter_id" id="store" class="newsletter-form-checkbox" />
+            <label for="store"></label>
+            <div style="display:inline-block" class="newsletter-form-label">Arduino Store Newsletter</div>
+          </div>
+        </div>
+        <div>
+          <p class="newsletterPopupError2" id="newsletterSubscribeStatus"></p>
+        </div>
+    </div>
+    <div class="row modalFooter">
+      <div class="form-buttons-row">
+        
+          <button type="button" value="Cancel" class="popup-form-button white cancel-modal close-reveal-modal">Cancel</button>
+          <button type="submit" name="Subscribe" id="subscribe-submit-btn" class="popup-form-button">Next</button>
+        
+      </div>
+    </div>
+  </form>
+
+  <!-- step 2, confirm popup -->
+  <div class="confirm-popup" style="margin-bottom:1em">
+    <div class="modalHeader">
+      <h3>Confirm your email address</h3>
+    </div>
+    <div class="modalBody" id="newsletterModalBody" style="padding-right:1em;margin-bottom:0">
+        <p style="margin-bottom:1em;font-size:15px">
+          We need to confirm your email address.<br>
+          To complete the subscription, please click the link in the
+          email we just sent you.
+        </p>
+        <p style="margin-bottom:1em;font-size:15px">
+          Thank you for subscribing!
+        </p>
+        <p style="margin-bottom:1em;font-size:15px">
+          Arduino<br>
+          via Egeo 16<br>
+          Torino, 10131<br>
+          Italy<br>
+        </p>
+    </div>
+    <div class="row modalFooter">
+      <div class="form-buttons-row">
+        
+          <button name="Ok" class="popup-form-button" id="close-confirm-popup">Ok</button>
+
+      </div>
+    </div>
+  </div>
+
+</div><script type="application/javascript">
+    $(document).ready(function() {
+    
+    function validateEmail(email) { 
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    } 
+
+    var openPopup = function() {
+
+      $('.confirm-popup').hide();
+      $('.form-popup').show();
+
+      var modalBody = $('#newsletterModalBody');
+      var emailInput = modalBody.find('#newsletterEmailField').find('input');
+      var subscribeButton = $('#subscribe-submit-btn');
+      var emailMissingP = modalBody.find('#emailMissing');
+      var formValid = false;
+      var confirmHtml = $('#newsletterModalConfirm').html();
+      var email = $('#sendy-EMAIL').val(); 
+
+      //reset popup values / appearance
+      $("#newsletterSubscribeStatus").hide();
+      $('#newsletterModal').find('.modal-header-main').show();
+      $('#newsletterModal').find('.modal-header-alt').hide();
+      emailMissingP.hide();
+      emailInput.val('');
+      modalBody.find('#store').prop('checked', true);
+      modalBody.find('#worldwide').prop('checked', true);
+
+      //both checkboxes checked at beginning 
+       
+      subscribeButton.removeAttr('disabled');
+
+      //If user didn't provide email by footer input box, show input box in the popup, else just checkboxes
+      if(validateEmail(email)) {
+        emailInput.val(email); 
+        formValid = true;
+      } else {
+        emailMissingP.show();  
+        subscribeButton.attr('disabled', 'disabled');
+        $('#sendy-EMAIL').val('');
+        formValid = false;
+      }
+
+      $('#newsletterModal').foundation('reveal', 'open');
+
+      emailInput.on('input propertychange paste', function(e) {
+           if(!validateEmail(emailInput.val())) {
+              emailMissingP.show();
+              subscribeButton.attr('disabled', 'disabled');
+              formValid = false;
+           } else {
+              formValid = true;
+              emailMissingP.hide();
+              subscribeButton.removeAttr('disabled');
+           }     
+      });
+    };
+
+    $('#sendy-EMAIL').on('keypress', function(e) {
+      if(e.keyCode == 13) {
+        openPopup();
+      }
+    });
+
+    $('#sendy-subscribe').on('click', function() {
+      openPopup();
+    });
+  
+    $("#sendy-subscribe-form").on('keypress', function(e) {
+        if(e.keyCode == 13 && formValid) {
+          e.preventDefault(); 
+          $(this).submit();
+        }
+    });
+
+    $('#subscribe-submit-btn').on('click', function(e){
+      e.preventDefault(); 
+      // disable 'NEXT' button to avoid multiple submits
+      $('#subscribe-submit-btn').attr('disabled', 'disabled');
+      $("#sendy-subscribe-form").submit();
+    });
+
+    $('#close-confirm-popup').on('click', function(e){
+      $('#newsletterModal').foundation('reveal', 'close');  
+    });
+
+    // trigger click on checkbox when clicking text label
+    $('.newsletter-form-label').on('click', function(e){
+      $(this).siblings("label").click();
+    });
+
+    $("#sendy-subscribe-form").on('submit', function(e){
+      e.preventDefault(); 
+      
+      var $form = $(this),
+      //name = $form.find('input[name="name"]').val(),
+      email = $form.find('input[name="email"]').val(),
+      lists = $form.find('input[name="list[]"]:checked'),
+      url = $form.attr('action');
+      
+      //reset
+      $("#newsletterSubscribeStatus").hide(); 
+
+      if(!lists.length) {
+        $("#newsletterSubscribeStatus").html("Please select at least <br> one newsletter.");
+        $("#newsletterSubscribeStatus").show(); 
+        //button 'NEXT' can be enabled
+        $('#subscribe-submit-btn').removeAttr('disabled');
+        return;
+      }
+
+      var listValues = [];
+      for(var i=0; i<lists.length; i++) {
+        listValues.push($(lists[i]).val());
+      }
+
+      $.post(url, {lists:listValues, email:email},
+        function(data) {
+            if(data)
+            {
+              if(data=="All fields are required.")
+              {
+                $("#newsletterSubscribeStatus").text("Please fill in your email.");
+                $("#newsletterSubscribeStatus").show(); 
+              }
+              else if(data=="Invalid email address.")
+              {
+                $("#newsletterSubscribeStatus").text("Your email address is invalid.");
+                $("#newsletterSubscribeStatus").show(); 
+              }
+              // else if(data=="Invalid list ID.")
+              // {
+              //   $("#newsletterSubscribeStatus").text("Your list ID is invalid.");
+              //   $("#newsletterSubscribeStatus").show(); 
+              // }
+              else if(data=="Already subscribed.")
+              {
+                $("#newsletterSubscribeStatus").text("You're already subscribed!");
+                $("#newsletterSubscribeStatus").show(); 
+              }
+              else if(data=="No list selected.")
+              {
+                $("#newsletterSubscribeStatus").text("Please select at least <br> one newsletter.");
+                $("#newsletterSubscribeStatus").show(); 
+              }
+              else
+              {
+                //$("#newsletterSubscribeStatus").text("You're subscribed!");
+                //change popup
+                $('.form-popup').hide();
+                $('.confirm-popup').show();
+                
+              }
+            }
+            else
+            {
+              alert("Sorry, unable to subscribe. Please try again later!");
+            }
+          //button 'NEXT' can be enabled now
+          $('#subscribe-submit-btn').removeAttr('disabled');
+        }
+      );
+    
+    });
+
+  });
+  </script>
+<div id="pagefooter" class="pagefooter">
+  <div class="row">
+    <div class="large-8 eight columns">
+      <div class="large-4 four columns newsletter-box">
+       <!-- Begin Sendy Signup Form -->
+       <h6>Newsletter</h6>
+        <div>
+          <input type="email" name="email" class="email" id="sendy-EMAIL" placeholder="Enter your email to sign up">
+          <i class="icon-right-small"></i>
+          <input value="Subscribe" name="subscribe" id="sendy-subscribe" class="newsletter-button">
+        </div>
+       <!--End sendy_embed_signup-->
+      </div>
+      <div style="clear:both;"></div>
+      <ul class="inline-list">
+        <li class="monospace">&copy;2015 Arduino</li>
+        <li><a href="http://arduino.cc/en/Main/CopyrightNotice">Copyright Notice</a></li>
+        <li><a href='http://arduino.cc/en/Main/ContactUs'>Contact us</a></li>
+      </ul>
+    </div>
+    <div class="large-4 four columns">
+      <ul id="arduinoSocialLinks" class="arduino-social-links">
+        <li>
+          <a href="https://twitter.com/arduino">
+            <img src="https://id.arduino.cc//img/twitter.png" />
+          </a>
+        </li>
+        <li>
+          <a href="http://www.facebook.com/official.arduino">
+            <img src="https://id.arduino.cc//img/facebook.png" />
+          </a>
+        </li>
+        <li>
+          <a href="https://plus.google.com/+Arduino">
+            <img src="https://id.arduino.cc//img/gplus.png" />
+          </a>
+        </li>
+        <li>
+          <a href="http://www.flickr.com/photos/arduino_cc">
+            <img src="https://id.arduino.cc//img/flickr.png" />
+          </a>
+        </li>
+        <li>
+          <a href="http://youtube.com/arduinoteam">
+            <img src="https://id.arduino.cc//img/youtube.png" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div id="ajax_in_progress" style="display: none;">Loading...</div>
+<script><!-- // --><![CDATA[
+	function triggerCron() {
+		var tempImage = new Image();
+		tempImage.src = 'http://forum.arduino.cc' + "/cron.php?ts=1423225200";
+	}
+	window.setTimeout(triggerCron, 1);
+// ]]></script>
+    <script src="http://arduino.cc/new_home/js/vendor/modernizr.js"></script>
+    <!--[if gte IE 9]><!-->
+    <script src="http://arduino.cc/js/foundation.min.js"></script>
+    <script src="http://arduino.cc/js/foundation.topbar.custom.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <!--<![endif]-->
+    <!--[if IE 8]>
+    <script src="http://arduino.cc/js/foundation_ie8.min.js"></script>
+    <script src="http://arduino.cc/js/ie8/jquery.foundation.alerts.js"></script>
+    <script src="http://arduino.cc/js/app.js"></script>
+    <![endif]-->
+</body>
+</html>
